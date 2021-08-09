@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>824112854959-mv1komvm3qlfvr168pk1es90e60pjrh2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.824112854959-mv1komvm3qlfvr168pk1es90e60pjrh2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDW34yA79wKHtpNC-PM6NVwI2Qp48zfrYA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>824112854959</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.FeatureX.One-Menu.Clip</string>
+	<key>PROJECT_ID</key>
+	<string>one-menu-40f52</string>
+	<key>STORAGE_BUCKET</key>
+	<string>one-menu-40f52.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:824112854959:ios:641aea4006f4825e1c615a</string>
+	<key>DATABASE_URL</key>
+	<string>https://one-menu-40f52.firebaseio.com</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We would like to use your camera to scan qr codes</string>
+</dict>
+</plist>
