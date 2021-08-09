@@ -19,20 +19,18 @@
 	<key>STORAGE_BUCKET</key>
 	<string>one-menu-40f52.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:824112854959:ios:641aea4006f4825e1c615a</string>
 	<key>DATABASE_URL</key>
 	<string>https://one-menu-40f52.firebaseio.com</string>
-	<key>NSCameraUsageDescription</key>
-	<string>We would like to use your camera to scan qr codes</string>
 </dict>
 </plist>

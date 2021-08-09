@@ -26,7 +26,7 @@ struct RootForScannedRestaurant: View {
     @EnvironmentObject var appClipState: AppClipsState
     @State var isRoot = false
     @State var showAllRestaurants = false
-    
+    @State var refreshedToken = false
     
     func getRestaurant(){
         print("Getting restaurant")
@@ -43,7 +43,13 @@ struct RootForScannedRestaurant: View {
                 FirebaseService.shared.refreshToken { result in
                     switch result {
                     case .success:
-                        getRestaurant()
+                        if refreshedToken == false {
+                            getRestaurant()
+                        } else{
+                            viewState = .noDataAvailable
+                        }
+                        refreshedToken = true
+                        
                     case .failure:
                         viewState = .noDataAvailable
                     }
