@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We would like to use your camera to scan qr codes</string>
 	<key>CLIENT_ID</key>
-	<string>824112854959-mv1komvm3qlfvr168pk1es90e60pjrh2.apps.googleusercontent.com</string>
+	<string>824112854959-fmj8bsub1v3nrss40v7tgc48bbkalgmr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.824112854959-mv1komvm3qlfvr168pk1es90e60pjrh2</string>
+	<string>com.googleusercontent.apps.824112854959-fmj8bsub1v3nrss40v7tgc48bbkalgmr</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDW34yA79wKHtpNC-PM6NVwI2Qp48zfrYA</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.FeatureX.One-Menu.Clip</string>
+	<string>FeatureX.One-Menu</string>
 	<key>PROJECT_ID</key>
 	<string>one-menu-40f52</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,10 +31,10 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:824112854959:ios:641aea4006f4825e1c615a</string>
+	<string>1:824112854959:ios:3bf403ed2eddaaf71c615a</string>
 	<key>DATABASE_URL</key>
 	<string>https://one-menu-40f52.firebaseio.com</string>
-	<key>NSCameraUsageDescription</key>
-	<string>We would like to use your camera to scan qr codes</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>qr</string>
 </dict>
 </plist>

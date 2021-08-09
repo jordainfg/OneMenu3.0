@@ -11,6 +11,7 @@ import Foundation
 import FirebaseStorage
 import Firebase
 import FirebaseCore
+import FirebaseFirestore
 //import FirebaseMessaging
 
 class FirebaseService : NSObject {

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5E123F8626C12DB0008D42BB /* One_MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F8526C12DB0008D42BB /* One_MenuApp.swift */; };
 		5E123F8826C12DB0008D42BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F8726C12DB0008D42BB /* ContentView.swift */; };
-		5E123F8A26C12DB0008D42BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123F8926C12DB0008D42BB /* Assets.xcassets */; };
 		5E123F8D26C12DB0008D42BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123F8C26C12DB0008D42BB /* Preview Assets.xcassets */; };
 		5E123FA126C12DBE008D42BB /* One_Menu_BusinessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F9426C12DBD008D42BB /* One_Menu_BusinessApp.swift */; };
 		5E123FA226C12DBE008D42BB /* One_Menu_BusinessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F9426C12DBD008D42BB /* One_Menu_BusinessApp.swift */; };
@@ -188,6 +187,33 @@
 		5E4E400026C14EEB00175B57 /* ConsumableForSelectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E3FFF26C14EEB00175B57 /* ConsumableForSelectionDetail.swift */; };
 		5E4E400126C14EEB00175B57 /* ConsumableForSelectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E3FFF26C14EEB00175B57 /* ConsumableForSelectionDetail.swift */; };
 		5E4E400926C15F3700175B57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E400826C15F3700175B57 /* GoogleService-Info.plist */; };
+		5E4E400B26C165E800175B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E400A26C165E800175B57 /* AppDelegate.swift */; };
+		5E4E403D26C1675100175B57 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E401A26C1675100175B57 /* SettingsView.swift */; };
+		5E4E403E26C1675100175B57 /* PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E401B26C1675100175B57 /* PrivacyPolicy.swift */; };
+		5E4E403F26C1675100175B57 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E401C26C1675100175B57 /* LanguageView.swift */; };
+		5E4E404026C1675100175B57 /* AboutTheApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E401D26C1675100175B57 /* AboutTheApp.swift */; };
+		5E4E404126C1675100175B57 /* autoAppearanceSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E401E26C1675100175B57 /* autoAppearanceSwitch.swift */; };
+		5E4E404226C1675100175B57 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E401F26C1675100175B57 /* Appearance.swift */; };
+		5E4E404326C1675100175B57 /* HyperLinkedRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402126C1675100175B57 /* HyperLinkedRestaurantView.swift */; };
+		5E4E404526C1675100175B57 /* selectedRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402326C1675100175B57 /* selectedRestaurant.swift */; };
+		5E4E404626C1675100175B57 /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402426C1675100175B57 /* RestaurantListView.swift */; };
+		5E4E404726C1675200175B57 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402626C1675100175B57 /* Welcome.swift */; };
+		5E4E404826C1675200175B57 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402726C1675100175B57 /* Features.swift */; };
+		5E4E404926C1675200175B57 /* HowItWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402826C1675100175B57 /* HowItWorks.swift */; };
+		5E4E404A26C1675200175B57 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402926C1675100175B57 /* LandingPage.swift */; };
+		5E4E404B26C1675200175B57 /* StateVsObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402B26C1675100175B57 /* StateVsObservedObject.swift */; };
+		5E4E404C26C1675200175B57 /* loadinFoodMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E402D26C1675100175B57 /* loadinFoodMenu.json */; };
+		5E4E404D26C1675200175B57 /* qrScanAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E402E26C1675100175B57 /* qrScanAnimation.json */; };
+		5E4E404E26C1675200175B57 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E402F26C1675100175B57 /* PostList.swift */; };
+		5E4E404F26C1675200175B57 /* ScanRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E403026C1675100175B57 /* ScanRestaurantView.swift */; };
+		5E4E405026C1675200175B57 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E403126C1675100175B57 /* Home.swift */; };
+		5E4E405126C1675200175B57 /* More.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E403226C1675100175B57 /* More.swift */; };
+		5E4E405226C1675200175B57 /* OneMenuBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E403426C1675100175B57 /* OneMenuBusiness.swift */; };
+		5E4E405326C1675200175B57 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E403526C1675100175B57 /* OnBoarding.swift */; };
+		5E4E405426C1675200175B57 /* RequestMenuOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E403626C1675100175B57 /* RequestMenuOnBoarding.swift */; };
+		5E4E406126C169C400175B57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E406426C169C400175B57 /* Localizable.strings */; };
+		5E4E406226C169C400175B57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E406426C169C400175B57 /* Localizable.strings */; };
+		5E4E406A26C1746100175B57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E400C26C166E100175B57 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,7 +244,6 @@
 		5E123F8226C12DB0008D42BB /* One Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E123F8526C12DB0008D42BB /* One_MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_MenuApp.swift; sourceTree = "<group>"; };
 		5E123F8726C12DB0008D42BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5E123F8926C12DB0008D42BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E123F8C26C12DB0008D42BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E123F9426C12DBD008D42BB /* One_Menu_BusinessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_Menu_BusinessApp.swift; sourceTree = "<group>"; };
 		5E123F9526C12DBD008D42BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -293,6 +318,35 @@
 		5E4E3FFF26C14EEB00175B57 /* ConsumableForSelectionDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsumableForSelectionDetail.swift; sourceTree = "<group>"; };
 		5E4E400226C1503C00175B57 /* OneMenuAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneMenuAppClip.entitlements; sourceTree = "<group>"; };
 		5E4E400826C15F3700175B57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E4E400A26C165E800175B57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E4E400C26C166E100175B57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E4E401A26C1675100175B57 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5E4E401B26C1675100175B57 /* PrivacyPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicy.swift; sourceTree = "<group>"; };
+		5E4E401C26C1675100175B57 /* LanguageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		5E4E401D26C1675100175B57 /* AboutTheApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTheApp.swift; sourceTree = "<group>"; };
+		5E4E401E26C1675100175B57 /* autoAppearanceSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = autoAppearanceSwitch.swift; sourceTree = "<group>"; };
+		5E4E401F26C1675100175B57 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		5E4E402126C1675100175B57 /* HyperLinkedRestaurantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperLinkedRestaurantView.swift; sourceTree = "<group>"; };
+		5E4E402326C1675100175B57 /* selectedRestaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectedRestaurant.swift; sourceTree = "<group>"; };
+		5E4E402426C1675100175B57 /* RestaurantListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
+		5E4E402626C1675100175B57 /* Welcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		5E4E402726C1675100175B57 /* Features.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
+		5E4E402826C1675100175B57 /* HowItWorks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowItWorks.swift; sourceTree = "<group>"; };
+		5E4E402926C1675100175B57 /* LandingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		5E4E402B26C1675100175B57 /* StateVsObservedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateVsObservedObject.swift; sourceTree = "<group>"; };
+		5E4E402D26C1675100175B57 /* loadinFoodMenu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadinFoodMenu.json; sourceTree = "<group>"; };
+		5E4E402E26C1675100175B57 /* qrScanAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qrScanAnimation.json; sourceTree = "<group>"; };
+		5E4E402F26C1675100175B57 /* PostList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
+		5E4E403026C1675100175B57 /* ScanRestaurantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanRestaurantView.swift; sourceTree = "<group>"; };
+		5E4E403126C1675100175B57 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5E4E403226C1675100175B57 /* More.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = More.swift; sourceTree = "<group>"; };
+		5E4E403426C1675100175B57 /* OneMenuBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneMenuBusiness.swift; sourceTree = "<group>"; };
+		5E4E403526C1675100175B57 /* OnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		5E4E403626C1675100175B57 /* RequestMenuOnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMenuOnBoarding.swift; sourceTree = "<group>"; };
+		5E4E405B26C167A600175B57 /* One Menu.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "One Menu.entitlements"; sourceTree = "<group>"; };
+		5E4E406326C169C400175B57 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E4E406526C169C600175B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E4E406B26C1751100175B57 /* One-Menu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "One-Menu-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,9 +455,13 @@
 		5E123F8426C12DB0008D42BB /* One Menu */ = {
 			isa = PBXGroup;
 			children = (
+				5E4E406B26C1751100175B57 /* One-Menu-Info.plist */,
+				5E4E405B26C167A600175B57 /* One Menu.entitlements */,
 				5E123F8526C12DB0008D42BB /* One_MenuApp.swift */,
+				5E4E400A26C165E800175B57 /* AppDelegate.swift */,
+				5E4E401826C1675100175B57 /* Views */,
 				5E123F8726C12DB0008D42BB /* ContentView.swift */,
-				5E123F8926C12DB0008D42BB /* Assets.xcassets */,
+				5E4E400C26C166E100175B57 /* GoogleService-Info.plist */,
 				5E123F8B26C12DB0008D42BB /* Preview Content */,
 			);
 			path = "One Menu";
@@ -436,6 +494,7 @@
 				5E12408426C14429008D42BB /* Networking & DataStore */,
 				5E12407C26C14429008D42BB /* Resources */,
 				5E12408926C14429008D42BB /* SharedAssets.xcassets */,
+				5E4E406426C169C400175B57 /* Localizable.strings */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -634,6 +693,84 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		5E4E401826C1675100175B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E403126C1675100175B57 /* Home.swift */,
+				5E4E403226C1675100175B57 /* More.swift */,
+				5E4E402026C1675100175B57 /* Restaurant */,
+				5E4E402526C1675100175B57 /* Tutorial */,
+				5E4E403326C1675100175B57 /* Partners */,
+				5E4E401926C1675100175B57 /* Settings */,
+				5E4E402A26C1675100175B57 /* Other */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E4E401926C1675100175B57 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E401A26C1675100175B57 /* SettingsView.swift */,
+				5E4E401B26C1675100175B57 /* PrivacyPolicy.swift */,
+				5E4E401C26C1675100175B57 /* LanguageView.swift */,
+				5E4E401D26C1675100175B57 /* AboutTheApp.swift */,
+				5E4E401E26C1675100175B57 /* autoAppearanceSwitch.swift */,
+				5E4E401F26C1675100175B57 /* Appearance.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5E4E402026C1675100175B57 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E402126C1675100175B57 /* HyperLinkedRestaurantView.swift */,
+				5E4E402326C1675100175B57 /* selectedRestaurant.swift */,
+				5E4E402426C1675100175B57 /* RestaurantListView.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		5E4E402526C1675100175B57 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E402626C1675100175B57 /* Welcome.swift */,
+				5E4E402726C1675100175B57 /* Features.swift */,
+				5E4E402826C1675100175B57 /* HowItWorks.swift */,
+				5E4E402926C1675100175B57 /* LandingPage.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		5E4E402A26C1675100175B57 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E402B26C1675100175B57 /* StateVsObservedObject.swift */,
+				5E4E402C26C1675100175B57 /* LottieAnimations */,
+				5E4E402F26C1675100175B57 /* PostList.swift */,
+				5E4E403026C1675100175B57 /* ScanRestaurantView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		5E4E402C26C1675100175B57 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E402D26C1675100175B57 /* loadinFoodMenu.json */,
+				5E4E402E26C1675100175B57 /* qrScanAnimation.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		5E4E403326C1675100175B57 /* Partners */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E403426C1675100175B57 /* OneMenuBusiness.swift */,
+				5E4E403526C1675100175B57 /* OnBoarding.swift */,
+				5E4E403626C1675100175B57 /* RequestMenuOnBoarding.swift */,
+			);
+			path = Partners;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -793,6 +930,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 5E123F7926C12DB0008D42BB;
 			packageReferences = (
@@ -822,8 +960,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1240DD26C14429008D42BB /* SharedAssets.xcassets in Resources */,
+				5E4E404D26C1675200175B57 /* qrScanAnimation.json in Resources */,
+				5E4E406126C169C400175B57 /* Localizable.strings in Resources */,
+				5E4E404C26C1675200175B57 /* loadinFoodMenu.json in Resources */,
 				5E123F8D26C12DB0008D42BB /* Preview Assets.xcassets in Resources */,
-				5E123F8A26C12DB0008D42BB /* Assets.xcassets in Resources */,
+				5E4E406A26C1746100175B57 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +986,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4E406226C169C400175B57 /* Localizable.strings in Resources */,
 				5E1240DE26C14429008D42BB /* SharedAssets.xcassets in Resources */,
 				5E4E400926C15F3700175B57 /* GoogleService-Info.plist in Resources */,
 				5E123FBB26C12DDB008D42BB /* Preview Assets.xcassets in Resources */,
@@ -859,36 +1001,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4E404026C1675100175B57 /* AboutTheApp.swift in Sources */,
+				5E4E404B26C1675200175B57 /* StateVsObservedObject.swift in Sources */,
 				5E1240C726C14429008D42BB /* VisualEffectBlur.swift in Sources */,
+				5E4E403D26C1675100175B57 /* SettingsView.swift in Sources */,
 				5E1240BD26C14429008D42BB /* RingView.swift in Sources */,
 				5E1240D926C14429008D42BB /* FirebaseService.swift in Sources */,
+				5E4E400B26C165E800175B57 /* AppDelegate.swift in Sources */,
 				5E12408B26C14429008D42BB /* moreListRow.swift in Sources */,
 				5E1240A926C14429008D42BB /* CGRect+extension.swift in Sources */,
+				5E4E404626C1675100175B57 /* RestaurantListView.swift in Sources */,
+				5E4E405326C1675200175B57 /* OnBoarding.swift in Sources */,
+				5E4E404F26C1675200175B57 /* ScanRestaurantView.swift in Sources */,
 				5E12409F26C14429008D42BB /* PartnerRequest.swift in Sources */,
 				5E1240D326C14429008D42BB /* TintOverlay.swift in Sources */,
+				5E4E405026C1675200175B57 /* Home.swift in Sources */,
 				5E1240CD26C14429008D42BB /* CodeScanner.swift in Sources */,
 				5E12409B26C14429008D42BB /* Consumable.swift in Sources */,
 				5E1240D126C14429008D42BB /* LottieView.swift in Sources */,
 				5E1240BF26C14429008D42BB /* ExplanationReUsableCompents.swift in Sources */,
+				5E4E405226C1675200175B57 /* OneMenuBusiness.swift in Sources */,
 				5E123F8826C12DB0008D42BB /* ContentView.swift in Sources */,
 				5E1240A126C14429008D42BB /* Restaurant.swift in Sources */,
 				5E1240B126C14429008D42BB /* String+Ext.swift in Sources */,
+				5E4E404326C1675100175B57 /* HyperLinkedRestaurantView.swift in Sources */,
 				5E4E400026C14EEB00175B57 /* ConsumableForSelectionDetail.swift in Sources */,
+				5E4E404726C1675200175B57 /* Welcome.swift in Sources */,
 				5E12408D26C14429008D42BB /* SpecialConsumableCard.swift in Sources */,
 				5E1240C326C14429008D42BB /* CustomComponents.swift in Sources */,
 				5E123F8626C12DB0008D42BB /* One_MenuApp.swift in Sources */,
 				5E4E3FF226C14DC800175B57 /* SettingsOption.swift in Sources */,
+				5E4E404226C1675100175B57 /* Appearance.swift in Sources */,
+				5E4E404926C1675200175B57 /* HowItWorks.swift in Sources */,
+				5E4E405426C1675200175B57 /* RequestMenuOnBoarding.swift in Sources */,
 				5E1240A326C14429008D42BB /* UIView+Extension.swift in Sources */,
 				5E1240A526C14429008D42BB /* String+extension.swift in Sources */,
+				5E4E404126C1675100175B57 /* autoAppearanceSwitch.swift in Sources */,
 				5E1240C926C14429008D42BB /* ActivityIndicator.swift in Sources */,
 				5E4E3FE826C14BA700175B57 /* consumableType.swift in Sources */,
+				5E4E403E26C1675100175B57 /* PrivacyPolicy.swift in Sources */,
 				5E1240D526C14429008D42BB /* CoreError.swift in Sources */,
 				5E1240B326C14429008D42BB /* View+ext.swift in Sources */,
+				5E4E403F26C1675100175B57 /* LanguageView.swift in Sources */,
 				5E4E3FFA26C14E8B00175B57 /* MainViewForConsumables.swift in Sources */,
 				5E1240AF26C14429008D42BB /* UIApplication+ext.swift in Sources */,
 				5E1240B926C14429008D42BB /* Styles.swift in Sources */,
 				5E1240AD26C14429008D42BB /* Device.swift in Sources */,
 				5E1240BB26C14429008D42BB /* CustomModifiers.swift in Sources */,
+				5E4E404E26C1675200175B57 /* PostList.swift in Sources */,
 				5E1240D726C14429008D42BB /* DataStore.swift in Sources */,
 				5E4E3FF726C14DF100175B57 /* ChooseLanguageView.swift in Sources */,
 				5E12409526C14429008D42BB /* ConsumableCategorieIcon.swift in Sources */,
@@ -896,7 +1056,11 @@
 				5E12409D26C14429008D42BB /* ConsumableCategorie.swift in Sources */,
 				5E1240CB26C14429008D42BB /* Searchbar.swift in Sources */,
 				5E12409726C14429008D42BB /* RestaurantRow.swift in Sources */,
+				5E4E404826C1675200175B57 /* Features.swift in Sources */,
+				5E4E404A26C1675200175B57 /* LandingPage.swift in Sources */,
 				5E1240C526C14429008D42BB /* ReadMe.swift in Sources */,
+				5E4E405126C1675200175B57 /* More.swift in Sources */,
+				5E4E404526C1675100175B57 /* selectedRestaurant.swift in Sources */,
 				5E12408F26C14429008D42BB /* ConsumableRow.swift in Sources */,
 				5E123FCC26C12F56008D42BB /* StripePaymentModel.swift in Sources */,
 				5E1240CF26C14429008D42BB /* SearchBarUI.swift in Sources */,
@@ -1018,6 +1182,18 @@
 			targetProxy = 5E123FBE26C12DDB008D42BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E4E406426C169C400175B57 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E4E406326C169C400175B57 /* nl */,
+				5E4E406526C169C600175B57 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5E123F8E26C12DB0008D42BB /* Debug */ = {
@@ -1142,12 +1318,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "One Menu/One Menu.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"One Menu/Preview Content\"";
 				DEVELOPMENT_TEAM = PTWF5822NK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "One-Menu-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We would like to use your camera to scan qr codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1158,7 +1337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1173,12 +1352,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "One Menu/One Menu.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"One Menu/Preview Content\"";
 				DEVELOPMENT_TEAM = PTWF5822NK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "One-Menu-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We would like to use your camera to scan qr codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1189,7 +1371,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
