@@ -1,0 +1,1266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E123F8626C12DB0008D42BB /* One_MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F8526C12DB0008D42BB /* One_MenuApp.swift */; };
+		5E123F8826C12DB0008D42BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F8726C12DB0008D42BB /* ContentView.swift */; };
+		5E123F8A26C12DB0008D42BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123F8926C12DB0008D42BB /* Assets.xcassets */; };
+		5E123F8D26C12DB0008D42BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123F8C26C12DB0008D42BB /* Preview Assets.xcassets */; };
+		5E123FA126C12DBE008D42BB /* One_Menu_BusinessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F9426C12DBD008D42BB /* One_Menu_BusinessApp.swift */; };
+		5E123FA226C12DBE008D42BB /* One_Menu_BusinessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F9426C12DBD008D42BB /* One_Menu_BusinessApp.swift */; };
+		5E123FA326C12DBE008D42BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F9526C12DBD008D42BB /* ContentView.swift */; };
+		5E123FA426C12DBE008D42BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F9526C12DBD008D42BB /* ContentView.swift */; };
+		5E123FA526C12DBE008D42BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123F9626C12DBE008D42BB /* Assets.xcassets */; };
+		5E123FA626C12DBE008D42BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123F9626C12DBE008D42BB /* Assets.xcassets */; };
+		5E123FB426C12DDB008D42BB /* OneMenuAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123FB326C12DDB008D42BB /* OneMenuAppClipApp.swift */; };
+		5E123FB626C12DDB008D42BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123FB526C12DDB008D42BB /* ContentView.swift */; };
+		5E123FB826C12DDB008D42BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123FB726C12DDB008D42BB /* Assets.xcassets */; };
+		5E123FBB26C12DDB008D42BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123FBA26C12DDB008D42BB /* Preview Assets.xcassets */; };
+		5E123FC026C12DDB008D42BB /* OneMenuAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 5E123FB126C12DDB008D42BB /* OneMenuAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5E123FCC26C12F56008D42BB /* StripePaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123FCB26C12F56008D42BB /* StripePaymentModel.swift */; };
+		5E123FCD26C12F56008D42BB /* StripePaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123FCB26C12F56008D42BB /* StripePaymentModel.swift */; };
+		5E123FCF26C12F81008D42BB /* Checkoutview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123FCE26C12F81008D42BB /* Checkoutview.swift */; };
+		5E123FD026C12F81008D42BB /* Checkoutview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123FCE26C12F81008D42BB /* Checkoutview.swift */; };
+		5E123FD426C13056008D42BB /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FD326C13056008D42BB /* Stripe */; };
+		5E123FD726C130F4008D42BB /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FD626C130F4008D42BB /* Stripe */; };
+		5E123FDA26C1317C008D42BB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FD926C1317C008D42BB /* SDWebImageSwiftUI */; };
+		5E123FDC26C1318B008D42BB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FDB26C1318B008D42BB /* SDWebImageSwiftUI */; };
+		5E123FDE26C13190008D42BB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FDD26C13190008D42BB /* SDWebImageSwiftUI */; };
+		5E123FE026C13195008D42BB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FDF26C13195008D42BB /* SDWebImageSwiftUI */; };
+		5E123FE326C13243008D42BB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FE226C13243008D42BB /* FirebaseAuth */; };
+		5E123FE526C13243008D42BB /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FE426C13243008D42BB /* FirebaseDynamicLinks */; };
+		5E123FE726C13243008D42BB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FE626C13243008D42BB /* FirebaseFirestore */; };
+		5E123FE926C13243008D42BB /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FE826C13243008D42BB /* FirebaseFirestoreSwift-Beta */; };
+		5E123FEB26C13243008D42BB /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FEA26C13243008D42BB /* FirebaseFunctions */; };
+		5E123FED26C13243008D42BB /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FEC26C13243008D42BB /* FirebaseMessaging */; };
+		5E123FEF26C13243008D42BB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FEE26C13243008D42BB /* FirebaseStorage */; };
+		5E123FF126C13243008D42BB /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FF026C13243008D42BB /* FirebaseStorageSwift-Beta */; };
+		5E123FF426C1326D008D42BB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FF326C1326D008D42BB /* Lottie */; };
+		5E123FF726C132CA008D42BB /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FF626C132CA008D42BB /* FacebookCore */; };
+		5E123FF926C132CA008D42BB /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FF826C132CA008D42BB /* FacebookLogin */; };
+		5E123FFC26C132F0008D42BB /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FFB26C132F0008D42BB /* Purchases */; };
+		5E123FFE26C1332D008D42BB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FFD26C1332D008D42BB /* FirebaseAuth */; };
+		5E12400026C1332D008D42BB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E123FFF26C1332D008D42BB /* FirebaseStorage */; };
+		5E12400226C1332D008D42BB /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12400126C1332D008D42BB /* FirebaseStorageSwift-Beta */; };
+		5E12400426C1336D008D42BB /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12400326C1336D008D42BB /* Stripe */; };
+		5E12400626C1336D008D42BB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12400526C1336D008D42BB /* FirebaseAuth */; };
+		5E12400826C1336D008D42BB /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12400726C1336D008D42BB /* FirebaseDynamicLinks */; };
+		5E12400A26C1336D008D42BB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12400926C1336D008D42BB /* FirebaseFirestore */; };
+		5E12400C26C1336D008D42BB /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12400B26C1336D008D42BB /* FirebaseFirestoreSwift-Beta */; };
+		5E12400E26C1336D008D42BB /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12400D26C1336D008D42BB /* FirebaseFunctions */; };
+		5E12401026C1336D008D42BB /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12400F26C1336D008D42BB /* FirebaseMessaging */; };
+		5E12401226C1336D008D42BB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12401126C1336D008D42BB /* FirebaseStorage */; };
+		5E12401426C1336E008D42BB /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12401326C1336E008D42BB /* FirebaseStorageSwift-Beta */; };
+		5E12401626C1336E008D42BB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12401526C1336E008D42BB /* Lottie */; };
+		5E12401926C138CF008D42BB /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12401826C138CF008D42BB /* KeychainSwift */; };
+		5E12401B26C138EB008D42BB /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12401A26C138EB008D42BB /* KeychainSwift */; };
+		5E12401D26C1395B008D42BB /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12401C26C1395B008D42BB /* Stripe */; };
+		5E12401F26C1395B008D42BB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12401E26C1395B008D42BB /* FirebaseAuth */; };
+		5E12402126C1395B008D42BB /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12402026C1395B008D42BB /* FirebaseDynamicLinks */; };
+		5E12402326C1395B008D42BB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12402226C1395B008D42BB /* FirebaseFirestore */; };
+		5E12402526C1395B008D42BB /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12402426C1395B008D42BB /* FirebaseFirestoreSwift-Beta */; };
+		5E12402726C1395B008D42BB /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12402626C1395B008D42BB /* FirebaseMessaging */; };
+		5E12402926C1395B008D42BB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12402826C1395B008D42BB /* FirebaseStorage */; };
+		5E12402B26C1395B008D42BB /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12402A26C1395B008D42BB /* FirebaseStorageSwift-Beta */; };
+		5E12402D26C1395B008D42BB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12402C26C1395B008D42BB /* Lottie */; };
+		5E12402F26C1395B008D42BB /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12402E26C1395B008D42BB /* FacebookCore */; };
+		5E12403126C1395B008D42BB /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12403026C1395B008D42BB /* FacebookLogin */; };
+		5E12403326C1395B008D42BB /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12403226C1395B008D42BB /* Purchases */; };
+		5E12403526C1395C008D42BB /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E12403426C1395C008D42BB /* KeychainSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E123FBE26C12DDB008D42BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E123F7A26C12DB0008D42BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E123FB026C12DDB008D42BB;
+			remoteInfo = OneMenuAppClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E123FC426C12DDB008D42BB /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				5E123FC026C12DDB008D42BB /* OneMenuAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5E123F8226C12DB0008D42BB /* One Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E123F8526C12DB0008D42BB /* One_MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_MenuApp.swift; sourceTree = "<group>"; };
+		5E123F8726C12DB0008D42BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E123F8926C12DB0008D42BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E123F8C26C12DB0008D42BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E123F9426C12DBD008D42BB /* One_Menu_BusinessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_Menu_BusinessApp.swift; sourceTree = "<group>"; };
+		5E123F9526C12DBD008D42BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E123F9626C12DBE008D42BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E123F9B26C12DBE008D42BB /* One Menu Business.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Menu Business.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E123FA026C12DBE008D42BB /* One Menu Business.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Menu Business.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E123FB126C12DDB008D42BB /* OneMenuAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneMenuAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E123FB326C12DDB008D42BB /* OneMenuAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMenuAppClipApp.swift; sourceTree = "<group>"; };
+		5E123FB526C12DDB008D42BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E123FB726C12DDB008D42BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E123FBA26C12DDB008D42BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E123FBC26C12DDB008D42BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E123FBD26C12DDB008D42BB /* OneMenuAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneMenuAppClip.entitlements; sourceTree = "<group>"; };
+		5E123FCB26C12F56008D42BB /* StripePaymentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripePaymentModel.swift; sourceTree = "<group>"; };
+		5E123FCE26C12F81008D42BB /* Checkoutview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkoutview.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E123F7F26C12DB0008D42BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123FED26C13243008D42BB /* FirebaseMessaging in Frameworks */,
+				5E123FDA26C1317C008D42BB /* SDWebImageSwiftUI in Frameworks */,
+				5E123FEF26C13243008D42BB /* FirebaseStorage in Frameworks */,
+				5E123FEB26C13243008D42BB /* FirebaseFunctions in Frameworks */,
+				5E123FE326C13243008D42BB /* FirebaseAuth in Frameworks */,
+				5E123FF126C13243008D42BB /* FirebaseStorageSwift-Beta in Frameworks */,
+				5E12401926C138CF008D42BB /* KeychainSwift in Frameworks */,
+				5E123FF426C1326D008D42BB /* Lottie in Frameworks */,
+				5E123FD426C13056008D42BB /* Stripe in Frameworks */,
+				5E123FE926C13243008D42BB /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				5E123FE726C13243008D42BB /* FirebaseFirestore in Frameworks */,
+				5E123FE526C13243008D42BB /* FirebaseDynamicLinks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123F9826C12DBE008D42BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E12400426C1336D008D42BB /* Stripe in Frameworks */,
+				5E12401626C1336E008D42BB /* Lottie in Frameworks */,
+				5E12400626C1336D008D42BB /* FirebaseAuth in Frameworks */,
+				5E123FDC26C1318B008D42BB /* SDWebImageSwiftUI in Frameworks */,
+				5E123FF726C132CA008D42BB /* FacebookCore in Frameworks */,
+				5E123FF926C132CA008D42BB /* FacebookLogin in Frameworks */,
+				5E12401226C1336D008D42BB /* FirebaseStorage in Frameworks */,
+				5E12400A26C1336D008D42BB /* FirebaseFirestore in Frameworks */,
+				5E12401426C1336E008D42BB /* FirebaseStorageSwift-Beta in Frameworks */,
+				5E12400C26C1336D008D42BB /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				5E12400E26C1336D008D42BB /* FirebaseFunctions in Frameworks */,
+				5E12400826C1336D008D42BB /* FirebaseDynamicLinks in Frameworks */,
+				5E12401B26C138EB008D42BB /* KeychainSwift in Frameworks */,
+				5E12401026C1336D008D42BB /* FirebaseMessaging in Frameworks */,
+				5E123FFC26C132F0008D42BB /* Purchases in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123F9D26C12DBE008D42BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123FDE26C13190008D42BB /* SDWebImageSwiftUI in Frameworks */,
+				5E12401F26C1395B008D42BB /* FirebaseAuth in Frameworks */,
+				5E12402726C1395B008D42BB /* FirebaseMessaging in Frameworks */,
+				5E12401D26C1395B008D42BB /* Stripe in Frameworks */,
+				5E12402F26C1395B008D42BB /* FacebookCore in Frameworks */,
+				5E12402526C1395B008D42BB /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				5E12403326C1395B008D42BB /* Purchases in Frameworks */,
+				5E12402D26C1395B008D42BB /* Lottie in Frameworks */,
+				5E12402B26C1395B008D42BB /* FirebaseStorageSwift-Beta in Frameworks */,
+				5E12403126C1395B008D42BB /* FacebookLogin in Frameworks */,
+				5E12403526C1395C008D42BB /* KeychainSwift in Frameworks */,
+				5E12402926C1395B008D42BB /* FirebaseStorage in Frameworks */,
+				5E12402326C1395B008D42BB /* FirebaseFirestore in Frameworks */,
+				5E12402126C1395B008D42BB /* FirebaseDynamicLinks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123FAE26C12DDB008D42BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E12400226C1332D008D42BB /* FirebaseStorageSwift-Beta in Frameworks */,
+				5E123FE026C13195008D42BB /* SDWebImageSwiftUI in Frameworks */,
+				5E12400026C1332D008D42BB /* FirebaseStorage in Frameworks */,
+				5E123FFE26C1332D008D42BB /* FirebaseAuth in Frameworks */,
+				5E123FD726C130F4008D42BB /* Stripe in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E123F7926C12DB0008D42BB = {
+			isa = PBXGroup;
+			children = (
+				5E123F9326C12DBD008D42BB /* Shared */,
+				5E123FD126C12FBC008D42BB /* One Menu Business */,
+				5E123F8426C12DB0008D42BB /* One Menu */,
+				5E123FB226C12DDB008D42BB /* OneMenuAppClip */,
+				5E123F8326C12DB0008D42BB /* Products */,
+				5E123FD526C130F4008D42BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E123F8326C12DB0008D42BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E123F8226C12DB0008D42BB /* One Menu.app */,
+				5E123F9B26C12DBE008D42BB /* One Menu Business.app */,
+				5E123FA026C12DBE008D42BB /* One Menu Business.app */,
+				5E123FB126C12DDB008D42BB /* OneMenuAppClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E123F8426C12DB0008D42BB /* One Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5E123F8526C12DB0008D42BB /* One_MenuApp.swift */,
+				5E123F8726C12DB0008D42BB /* ContentView.swift */,
+				5E123F8926C12DB0008D42BB /* Assets.xcassets */,
+				5E123F8B26C12DB0008D42BB /* Preview Content */,
+			);
+			path = "One Menu";
+			sourceTree = "<group>";
+		};
+		5E123F8B26C12DB0008D42BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E123F8C26C12DB0008D42BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E123F9326C12DBD008D42BB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5E123FCB26C12F56008D42BB /* StripePaymentModel.swift */,
+				5E123FCE26C12F81008D42BB /* Checkoutview.swift */,
+				5E123F9626C12DBE008D42BB /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5E123FB226C12DDB008D42BB /* OneMenuAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				5E123FB326C12DDB008D42BB /* OneMenuAppClipApp.swift */,
+				5E123FB526C12DDB008D42BB /* ContentView.swift */,
+				5E123FB726C12DDB008D42BB /* Assets.xcassets */,
+				5E123FBC26C12DDB008D42BB /* Info.plist */,
+				5E123FBD26C12DDB008D42BB /* OneMenuAppClip.entitlements */,
+				5E123FB926C12DDB008D42BB /* Preview Content */,
+			);
+			path = OneMenuAppClip;
+			sourceTree = "<group>";
+		};
+		5E123FB926C12DDB008D42BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E123FBA26C12DDB008D42BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E123FD126C12FBC008D42BB /* One Menu Business */ = {
+			isa = PBXGroup;
+			children = (
+				5E123F9526C12DBD008D42BB /* ContentView.swift */,
+				5E123F9426C12DBD008D42BB /* One_Menu_BusinessApp.swift */,
+			);
+			path = "One Menu Business";
+			sourceTree = "<group>";
+		};
+		5E123FD526C130F4008D42BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E123F8126C12DB0008D42BB /* One Menu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E123F9026C12DB0008D42BB /* Build configuration list for PBXNativeTarget "One Menu" */;
+			buildPhases = (
+				5E123F7E26C12DB0008D42BB /* Sources */,
+				5E123F7F26C12DB0008D42BB /* Frameworks */,
+				5E123F8026C12DB0008D42BB /* Resources */,
+				5E123FC426C12DDB008D42BB /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E123FBF26C12DDB008D42BB /* PBXTargetDependency */,
+			);
+			name = "One Menu";
+			packageProductDependencies = (
+				5E123FD326C13056008D42BB /* Stripe */,
+				5E123FD926C1317C008D42BB /* SDWebImageSwiftUI */,
+				5E123FE226C13243008D42BB /* FirebaseAuth */,
+				5E123FE426C13243008D42BB /* FirebaseDynamicLinks */,
+				5E123FE626C13243008D42BB /* FirebaseFirestore */,
+				5E123FE826C13243008D42BB /* FirebaseFirestoreSwift-Beta */,
+				5E123FEA26C13243008D42BB /* FirebaseFunctions */,
+				5E123FEC26C13243008D42BB /* FirebaseMessaging */,
+				5E123FEE26C13243008D42BB /* FirebaseStorage */,
+				5E123FF026C13243008D42BB /* FirebaseStorageSwift-Beta */,
+				5E123FF326C1326D008D42BB /* Lottie */,
+				5E12401826C138CF008D42BB /* KeychainSwift */,
+			);
+			productName = "One Menu";
+			productReference = 5E123F8226C12DB0008D42BB /* One Menu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E123F9A26C12DBE008D42BB /* One Menu Business (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E123FA726C12DBE008D42BB /* Build configuration list for PBXNativeTarget "One Menu Business (iOS)" */;
+			buildPhases = (
+				5E123F9726C12DBE008D42BB /* Sources */,
+				5E123F9826C12DBE008D42BB /* Frameworks */,
+				5E123F9926C12DBE008D42BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "One Menu Business (iOS)";
+			packageProductDependencies = (
+				5E123FDB26C1318B008D42BB /* SDWebImageSwiftUI */,
+				5E123FF626C132CA008D42BB /* FacebookCore */,
+				5E123FF826C132CA008D42BB /* FacebookLogin */,
+				5E123FFB26C132F0008D42BB /* Purchases */,
+				5E12400326C1336D008D42BB /* Stripe */,
+				5E12400526C1336D008D42BB /* FirebaseAuth */,
+				5E12400726C1336D008D42BB /* FirebaseDynamicLinks */,
+				5E12400926C1336D008D42BB /* FirebaseFirestore */,
+				5E12400B26C1336D008D42BB /* FirebaseFirestoreSwift-Beta */,
+				5E12400D26C1336D008D42BB /* FirebaseFunctions */,
+				5E12400F26C1336D008D42BB /* FirebaseMessaging */,
+				5E12401126C1336D008D42BB /* FirebaseStorage */,
+				5E12401326C1336E008D42BB /* FirebaseStorageSwift-Beta */,
+				5E12401526C1336E008D42BB /* Lottie */,
+				5E12401A26C138EB008D42BB /* KeychainSwift */,
+			);
+			productName = "One Menu Business (iOS)";
+			productReference = 5E123F9B26C12DBE008D42BB /* One Menu Business.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E123F9F26C12DBE008D42BB /* One Menu Business (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E123FAA26C12DBE008D42BB /* Build configuration list for PBXNativeTarget "One Menu Business (macOS)" */;
+			buildPhases = (
+				5E123F9C26C12DBE008D42BB /* Sources */,
+				5E123F9D26C12DBE008D42BB /* Frameworks */,
+				5E123F9E26C12DBE008D42BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "One Menu Business (macOS)";
+			packageProductDependencies = (
+				5E123FDD26C13190008D42BB /* SDWebImageSwiftUI */,
+				5E12401C26C1395B008D42BB /* Stripe */,
+				5E12401E26C1395B008D42BB /* FirebaseAuth */,
+				5E12402026C1395B008D42BB /* FirebaseDynamicLinks */,
+				5E12402226C1395B008D42BB /* FirebaseFirestore */,
+				5E12402426C1395B008D42BB /* FirebaseFirestoreSwift-Beta */,
+				5E12402626C1395B008D42BB /* FirebaseMessaging */,
+				5E12402826C1395B008D42BB /* FirebaseStorage */,
+				5E12402A26C1395B008D42BB /* FirebaseStorageSwift-Beta */,
+				5E12402C26C1395B008D42BB /* Lottie */,
+				5E12402E26C1395B008D42BB /* FacebookCore */,
+				5E12403026C1395B008D42BB /* FacebookLogin */,
+				5E12403226C1395B008D42BB /* Purchases */,
+				5E12403426C1395C008D42BB /* KeychainSwift */,
+			);
+			productName = "One Menu Business (macOS)";
+			productReference = 5E123FA026C12DBE008D42BB /* One Menu Business.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E123FB026C12DDB008D42BB /* OneMenuAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E123FC126C12DDB008D42BB /* Build configuration list for PBXNativeTarget "OneMenuAppClip" */;
+			buildPhases = (
+				5E123FAD26C12DDB008D42BB /* Sources */,
+				5E123FAE26C12DDB008D42BB /* Frameworks */,
+				5E123FAF26C12DDB008D42BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneMenuAppClip;
+			packageProductDependencies = (
+				5E123FD626C130F4008D42BB /* Stripe */,
+				5E123FDF26C13195008D42BB /* SDWebImageSwiftUI */,
+				5E123FFD26C1332D008D42BB /* FirebaseAuth */,
+				5E123FFF26C1332D008D42BB /* FirebaseStorage */,
+				5E12400126C1332D008D42BB /* FirebaseStorageSwift-Beta */,
+			);
+			productName = OneMenuAppClip;
+			productReference = 5E123FB126C12DDB008D42BB /* OneMenuAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E123F7A26C12DB0008D42BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					5E123F8126C12DB0008D42BB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					5E123F9A26C12DBE008D42BB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					5E123F9F26C12DBE008D42BB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					5E123FB026C12DDB008D42BB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 5E123F7D26C12DB0008D42BB /* Build configuration list for PBXProject "One Menu" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E123F7926C12DB0008D42BB;
+			packageReferences = (
+				5E123FD226C13056008D42BB /* XCRemoteSwiftPackageReference "stripe-ios" */,
+				5E123FD826C1317C008D42BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5E123FF226C1326D008D42BB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				5E123FF526C132CA008D42BB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				5E123FFA26C132EF008D42BB /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				5E12401726C138CF008D42BB /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = 5E123F8326C12DB0008D42BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E123F8126C12DB0008D42BB /* One Menu */,
+				5E123F9A26C12DBE008D42BB /* One Menu Business (iOS) */,
+				5E123F9F26C12DBE008D42BB /* One Menu Business (macOS) */,
+				5E123FB026C12DDB008D42BB /* OneMenuAppClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E123F8026C12DB0008D42BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123F8D26C12DB0008D42BB /* Preview Assets.xcassets in Resources */,
+				5E123F8A26C12DB0008D42BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123F9926C12DBE008D42BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123FA526C12DBE008D42BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123F9E26C12DBE008D42BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123FA626C12DBE008D42BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123FAF26C12DDB008D42BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123FBB26C12DDB008D42BB /* Preview Assets.xcassets in Resources */,
+				5E123FB826C12DDB008D42BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E123F7E26C12DB0008D42BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123F8826C12DB0008D42BB /* ContentView.swift in Sources */,
+				5E123F8626C12DB0008D42BB /* One_MenuApp.swift in Sources */,
+				5E123FCF26C12F81008D42BB /* Checkoutview.swift in Sources */,
+				5E123FCC26C12F56008D42BB /* StripePaymentModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123F9726C12DBE008D42BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123FA326C12DBE008D42BB /* ContentView.swift in Sources */,
+				5E123FA126C12DBE008D42BB /* One_Menu_BusinessApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123F9C26C12DBE008D42BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123FA426C12DBE008D42BB /* ContentView.swift in Sources */,
+				5E123FA226C12DBE008D42BB /* One_Menu_BusinessApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E123FAD26C12DDB008D42BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E123FB626C12DDB008D42BB /* ContentView.swift in Sources */,
+				5E123FB426C12DDB008D42BB /* OneMenuAppClipApp.swift in Sources */,
+				5E123FD026C12F81008D42BB /* Checkoutview.swift in Sources */,
+				5E123FCD26C12F56008D42BB /* StripePaymentModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E123FBF26C12DDB008D42BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E123FB026C12DDB008D42BB /* OneMenuAppClip */;
+			targetProxy = 5E123FBE26C12DDB008D42BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5E123F8E26C12DB0008D42BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E123F8F26C12DB0008D42BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E123F9126C12DB0008D42BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"One Menu/Preview Content\"";
+				DEVELOPMENT_TEAM = PTWF5822NK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E123F9226C12DB0008D42BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"One Menu/Preview Content\"";
+				DEVELOPMENT_TEAM = PTWF5822NK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E123FA826C12DBE008D42BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PTWF5822NK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu-Business";
+				PRODUCT_NAME = "One Menu Business";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E123FA926C12DBE008D42BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PTWF5822NK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu-Business";
+				PRODUCT_NAME = "One Menu Business";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E123FAB26C12DBE008D42BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PTWF5822NK;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu-Business";
+				PRODUCT_NAME = "One Menu Business";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5E123FAC26C12DBE008D42BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PTWF5822NK;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu-Business";
+				PRODUCT_NAME = "One Menu Business";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5E123FC226C12DDB008D42BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OneMenuAppClip/OneMenuAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OneMenuAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = PTWF5822NK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneMenuAppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "One Menu";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E123FC326C12DDB008D42BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OneMenuAppClip/OneMenuAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OneMenuAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = PTWF5822NK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneMenuAppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "One Menu";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FeatureX.One-Menu.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E123F7D26C12DB0008D42BB /* Build configuration list for PBXProject "One Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E123F8E26C12DB0008D42BB /* Debug */,
+				5E123F8F26C12DB0008D42BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E123F9026C12DB0008D42BB /* Build configuration list for PBXNativeTarget "One Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E123F9126C12DB0008D42BB /* Debug */,
+				5E123F9226C12DB0008D42BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E123FA726C12DBE008D42BB /* Build configuration list for PBXNativeTarget "One Menu Business (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E123FA826C12DBE008D42BB /* Debug */,
+				5E123FA926C12DBE008D42BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E123FAA26C12DBE008D42BB /* Build configuration list for PBXNativeTarget "One Menu Business (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E123FAB26C12DBE008D42BB /* Debug */,
+				5E123FAC26C12DBE008D42BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E123FC126C12DDB008D42BB /* Build configuration list for PBXNativeTarget "OneMenuAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E123FC226C12DDB008D42BB /* Debug */,
+				5E123FC326C12DDB008D42BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E123FD226C13056008D42BB /* XCRemoteSwiftPackageReference "stripe-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 21.7.0;
+			};
+		};
+		5E123FD826C1317C008D42BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.2;
+			};
+		};
+		5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 8.5.0;
+			};
+		};
+		5E123FF226C1326D008D42BB /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.2.3;
+			};
+		};
+		5E123FF526C132CA008D42BB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 9.3.0;
+			};
+		};
+		5E123FFA26C132EF008D42BB /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.12.3;
+			};
+		};
+		5E12401726C138CF008D42BB /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 19.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E123FD326C13056008D42BB /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FD226C13056008D42BB /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		5E123FD626C130F4008D42BB /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FD226C13056008D42BB /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		5E123FD926C1317C008D42BB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FD826C1317C008D42BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		5E123FDB26C1318B008D42BB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FD826C1317C008D42BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		5E123FDD26C13190008D42BB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FD826C1317C008D42BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		5E123FDF26C13195008D42BB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FD826C1317C008D42BB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		5E123FE226C13243008D42BB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5E123FE426C13243008D42BB /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		5E123FE626C13243008D42BB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5E123FE826C13243008D42BB /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		5E123FEA26C13243008D42BB /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		5E123FEC26C13243008D42BB /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		5E123FEE26C13243008D42BB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5E123FF026C13243008D42BB /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		5E123FF326C1326D008D42BB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FF226C1326D008D42BB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		5E123FF626C132CA008D42BB /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FF526C132CA008D42BB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		5E123FF826C132CA008D42BB /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FF526C132CA008D42BB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		5E123FFB26C132F0008D42BB /* Purchases */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FFA26C132EF008D42BB /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = Purchases;
+		};
+		5E123FFD26C1332D008D42BB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5E123FFF26C1332D008D42BB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5E12400126C1332D008D42BB /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		5E12400326C1336D008D42BB /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FD226C13056008D42BB /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		5E12400526C1336D008D42BB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5E12400726C1336D008D42BB /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		5E12400926C1336D008D42BB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5E12400B26C1336D008D42BB /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		5E12400D26C1336D008D42BB /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		5E12400F26C1336D008D42BB /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		5E12401126C1336D008D42BB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5E12401326C1336E008D42BB /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		5E12401526C1336E008D42BB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FF226C1326D008D42BB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		5E12401826C138CF008D42BB /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E12401726C138CF008D42BB /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		5E12401A26C138EB008D42BB /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E12401726C138CF008D42BB /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		5E12401C26C1395B008D42BB /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FD226C13056008D42BB /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		5E12401E26C1395B008D42BB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5E12402026C1395B008D42BB /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		5E12402226C1395B008D42BB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5E12402426C1395B008D42BB /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		5E12402626C1395B008D42BB /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		5E12402826C1395B008D42BB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5E12402A26C1395B008D42BB /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FE126C13243008D42BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		5E12402C26C1395B008D42BB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FF226C1326D008D42BB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		5E12402E26C1395B008D42BB /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FF526C132CA008D42BB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		5E12403026C1395B008D42BB /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FF526C132CA008D42BB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		5E12403226C1395B008D42BB /* Purchases */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E123FFA26C132EF008D42BB /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = Purchases;
+		};
+		5E12403426C1395C008D42BB /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E12401726C138CF008D42BB /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5E123F7A26C12DB0008D42BB /* Project object */;
+}
