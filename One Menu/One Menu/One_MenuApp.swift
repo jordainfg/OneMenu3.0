@@ -21,9 +21,32 @@ struct One_MenuApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Home().environmentObject(appState).onContinueUserActivity(NSUserActivityTypeBrowsingWeb, perform: handleUserActivity)
+            Home()
+                .environmentObject(appState)
+                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb, perform: handleUserActivity)
+                .onOpenURL { incomingURL in
+                    print("Incoming URL parameter is: \(incomingURL)")
+                    
+                    // MARK: - Handle INCOMING url
+                    let linkHandled = DynamicLinks.dynamicLinks().handleUniversalLink(incomingURL){ (dynamicLink,error) in
+                        guard error == nil else {
+                            fatalError("Error handling the incoming dynamic link.")
+                            
+                        }
+                        if let dynamicLink = dynamicLink{
+                            self.handleDynamicLink(dynamicLink)
+                        }
+                    }
+                    if linkHandled {
+                        print("DYNAMIC Link Handled")
+                    } else {
+                        print("Not dynamic link")
+                    }
+                    
+                }
             
-        }.onChange(of: scenePhase) { (newScenePhase) in
+        }
+        .onChange(of: scenePhase) { (newScenePhase) in
             switch newScenePhase {
             case .background:
                 print("App State : Background")

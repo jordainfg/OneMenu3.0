@@ -25,7 +25,7 @@ struct ScanRestaurantView: View {
         switch result {
         case .success(let code):
             var parsedCode = code
-            if let range = code.range(of: "restaurantID=") {
+            if let range = code.range(of: "link/") {
                 let phone = code[range.upperBound...]
                 parsedCode = String(phone) // prints "123.456.7891"
             }
