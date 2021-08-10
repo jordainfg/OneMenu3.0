@@ -17,12 +17,15 @@ struct One_MenuApp: App {
     
     @AppStorage("showHyperLinkedRestaurant") var showHyperLinkedRestaurant : Bool = false
     
+    @AppStorage("selectedColorScheme") private var selectedColorScheme : colorScheme = .system
+    
     let appState = AppState()
     
     var body: some Scene {
         WindowGroup {
             Home()
                 .environmentObject(appState)
+                .environment(\.colorScheme, selectedColorScheme == .system ? UITraitCollection.current.userInterfaceStyle == .dark ? .dark : .light : selectedColorScheme == .dark ? .dark : .light )
                 .onContinueUserActivity(NSUserActivityTypeBrowsingWeb, perform: handleUserActivity)
                 .onOpenURL { incomingURL in
                     print("Incoming URL parameter is: \(incomingURL)")

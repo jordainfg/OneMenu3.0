@@ -17,9 +17,14 @@ struct One_Menu_BusinessApp: App {
     
     @Environment(\.scenePhase) var scenePhase
     
+    @AppStorage("selectedColorScheme") private var selectedColorScheme : colorScheme = .system
+    
     var body: some Scene {
         WindowGroup {
-            HomePage().environmentObject(subscriptionManager)
+            
+            HomePage()
+                .environmentObject(subscriptionManager)
+                .environment(\.colorScheme, selectedColorScheme == .system ? UITraitCollection.current.userInterfaceStyle == .dark ? .dark : .light : selectedColorScheme == .dark ? .dark : .light )
         }
         .onChange(of: scenePhase) { (newScenePhase) in
             switch newScenePhase {

@@ -12,7 +12,7 @@
 import Foundation
 import Combine
 
-protocol NetworkControllerProtocol: class {
+protocol NetworkControllerProtocol: AnyObject {
    
     
     func get<T>(type: T.Type,

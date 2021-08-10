@@ -36,10 +36,7 @@ struct SettingsView: View {
         List {
             
             Section(header: Text("APP")) {
-                NavigationLink(destination: Appearance().environmentObject(appearanceStore)) {
-                    
-                    SettingsOptionButton(settingName: "Appearance", settingIconSystemName: "lightbulb.fill", settingIconName: "", iconBackgroundColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)){}
-                }
+                ChangeColorThemeSegment()
 
                     Picker(selection: $selectedLanguageForiOS13, label: SettingsOption(settingName: "Language", settingIconSystemName: "a", settingIconName: "", iconBackgroundColor: #colorLiteral(red: 0.1019607843, green: 0.7803921569, blue: 0.3450980392, alpha: 1))) {
                         Text("Dutch").font(.footnote).tag(0)

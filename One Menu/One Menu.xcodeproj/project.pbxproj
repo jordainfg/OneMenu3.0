@@ -211,6 +211,9 @@
 		5E4E406226C169C400175B57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E406426C169C400175B57 /* Localizable.strings */; };
 		5E4E406A26C1746100175B57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E400C26C166E100175B57 /* GoogleService-Info.plist */; };
 		5EA1EAF526C2A3EE000C7C2E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1EAF426C2A3EE000C7C2E /* StoreKit.framework */; };
+		5EA1EAF726C2AE76000C7C2E /* ChangeColorThemeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */; };
+		5EA1EAF826C2AE76000C7C2E /* ChangeColorThemeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */; };
+		5EA1EAF926C2AFEF000C7C2E /* ChangeColorThemeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */; };
 		5EB11C0B26C295C300F85734 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB11C0A26C295C300F85734 /* Media.xcassets */; };
 		5EB11C0C26C295C300F85734 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB11C0A26C295C300F85734 /* Media.xcassets */; };
 		5EB11C1226C2962700F85734 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB11C1126C2962700F85734 /* StoreKit.framework */; };
@@ -470,6 +473,7 @@
 		5E4E406526C169C600175B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5E4E406B26C1751100175B57 /* One-Menu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "One-Menu-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5EA1EAF426C2A3EE000C7C2E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorThemeSegment.swift; sourceTree = "<group>"; };
 		5EB11C0A26C295C300F85734 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		5EB11C0F26C2960300F85734 /* One Menu Business (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "One Menu Business (iOS).entitlements"; sourceTree = "<group>"; };
 		5EB11C1026C2962200F85734 /* One Menu Business (macOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "One Menu Business (macOS).entitlements"; sourceTree = "<group>"; };
@@ -670,6 +674,7 @@
 				5E4E3FFF26C14EEB00175B57 /* ConsumableForSelectionDetail.swift */,
 				5E4E3FF926C14E8B00175B57 /* MainViewForConsumables.swift */,
 				5E4E3FF626C14DF000175B57 /* ChooseLanguageView.swift */,
+				5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */,
 				5E12406026C14429008D42BB /* Models */,
 				5E12405726C14429008D42BB /* Components */,
 				5E12406526C14429008D42BB /* Extensions */,
@@ -1443,6 +1448,7 @@
 				5E1240C526C14429008D42BB /* ReadMe.swift in Sources */,
 				5E4E405126C1675200175B57 /* More.swift in Sources */,
 				5E4E404526C1675100175B57 /* selectedRestaurant.swift in Sources */,
+				5EA1EAF926C2AFEF000C7C2E /* ChangeColorThemeSegment.swift in Sources */,
 				5E12408F26C14429008D42BB /* ConsumableRow.swift in Sources */,
 				5E123FCC26C12F56008D42BB /* StripePaymentModel.swift in Sources */,
 				5E1240CF26C14429008D42BB /* SearchBarUI.swift in Sources */,
@@ -1511,6 +1517,7 @@
 				5EB11CD726C29F4F00F85734 /* Color+extension.swift in Sources */,
 				5EB11C8326C2967000F85734 /* TemplateColorSchemePicker.swift in Sources */,
 				5EB11CBF26C2967000F85734 /* AuthenticationState.swift in Sources */,
+				5EA1EAF726C2AE76000C7C2E /* ChangeColorThemeSegment.swift in Sources */,
 				5EB11C7D26C2967000F85734 /* ListOfConsumableView.swift in Sources */,
 				5EB11CBB26C2967000F85734 /* NewsRequest.swift in Sources */,
 				5EB11C8926C2967000F85734 /* EditConsumableView.swift in Sources */,
@@ -1591,6 +1598,7 @@
 				5EB11CD826C29F5100F85734 /* Color+extension.swift in Sources */,
 				5EB11C8426C2967000F85734 /* TemplateColorSchemePicker.swift in Sources */,
 				5EB11CC026C2967000F85734 /* AuthenticationState.swift in Sources */,
+				5EA1EAF826C2AE76000C7C2E /* ChangeColorThemeSegment.swift in Sources */,
 				5EB11C7E26C2967000F85734 /* ListOfConsumableView.swift in Sources */,
 				5EB11CBC26C2967000F85734 /* NewsRequest.swift in Sources */,
 				5EB11C8A26C2967000F85734 /* EditConsumableView.swift in Sources */,

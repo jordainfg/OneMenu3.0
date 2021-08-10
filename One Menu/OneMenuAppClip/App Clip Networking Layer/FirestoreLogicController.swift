@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-protocol FirestoreLogicControllerProtocol: class {
+protocol FirestoreLogicControllerProtocol: AnyObject {
     var networkController: NetworkControllerProtocol { get }
 
     func getRestaurantDocument(id : String) -> AnyPublisher<Restaurant, Error>
