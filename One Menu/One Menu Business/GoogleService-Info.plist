@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We need access to your photos gallery to save the QR code for your restaurant.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photos gallery to save the QR code for your restaurant.</string>
+	<key>CLIENT_ID</key>
+	<string>824112854959-8pu6pplhockg2nhtgs42h5hsp665k2kv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.824112854959-8pu6pplhockg2nhtgs42h5hsp665k2kv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDW34yA79wKHtpNC-PM6NVwI2Qp48zfrYA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>824112854959</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>FeatureX.One-Menu-Business</string>
+	<key>PROJECT_ID</key>
+	<string>one-menu-40f52</string>
+	<key>STORAGE_BUCKET</key>
+	<string>one-menu-40f52.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:824112854959:ios:d9963aa027152a4b1c615a</string>
+	<key>DATABASE_URL</key>
+	<string>https://one-menu-40f52.firebaseio.com</string>
+</dict>
+</plist>
