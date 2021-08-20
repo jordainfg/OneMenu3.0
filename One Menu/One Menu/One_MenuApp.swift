@@ -1,10 +1,7 @@
-//
-//  One_MenuApp.swift
-//  One Menu
-//
-//  Created by Jordain on 09/08/2021.
-//
-
+/*0
+Abstract:
+The single entry point for the One Menu app on iOS and macOS.
+*/
 import SwiftUI
 import FirebaseDynamicLinks
 @main

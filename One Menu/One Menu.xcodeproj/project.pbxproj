@@ -339,6 +339,11 @@
 		5EB11CDE26C2A05E00F85734 /* SpecialConsumableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12405926C14429008D42BB /* SpecialConsumableCard.swift */; };
 		5EB11CDF26C2A0A100F85734 /* UIApplication+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+ext.swift */; };
 		5EB11CE026C2A0A100F85734 /* UIApplication+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+ext.swift */; };
+		5EB14CCF26CFE3FE00A7A803 /* menuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB14CCA26CFE3FD00A7A803 /* menuItem.swift */; };
+		5EB14CD026CFE3FE00A7A803 /* itemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB14CCB26CFE3FD00A7A803 /* itemRow.swift */; };
+		5EB14CD126CFE3FE00A7A803 /* CreateMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB14CCC26CFE3FD00A7A803 /* CreateMenuItemView.swift */; };
+		5EB14CD226CFE3FE00A7A803 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB14CCD26CFE3FD00A7A803 /* Order.swift */; };
+		5EB14CD326CFE3FE00A7A803 /* OrderConsumableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB14CCE26CFE3FE00A7A803 /* OrderConsumableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -535,6 +540,11 @@
 		5EB11CD126C2969600F85734 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5EB11CD326C2969A00F85734 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5EB11CD426C2995E00F85734 /* One-Menu-Business--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "One-Menu-Business--iOS--Info.plist"; sourceTree = "<group>"; };
+		5EB14CCA26CFE3FD00A7A803 /* menuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuItem.swift; sourceTree = "<group>"; };
+		5EB14CCB26CFE3FD00A7A803 /* itemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemRow.swift; sourceTree = "<group>"; };
+		5EB14CCC26CFE3FD00A7A803 /* CreateMenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMenuItemView.swift; sourceTree = "<group>"; };
+		5EB14CCD26CFE3FD00A7A803 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5EB14CCE26CFE3FE00A7A803 /* OrderConsumableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConsumableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -898,6 +908,7 @@
 		5E4E401826C1675100175B57 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5EB14CC926CFE3E900A7A803 /* Order */,
 				5E4E403126C1675100175B57 /* Home.swift */,
 				5E4E403226C1675100175B57 /* More.swift */,
 				5E4E402026C1675100175B57 /* Restaurant */,
@@ -1155,6 +1166,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		5EB14CC926CFE3E900A7A803 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				5EB14CCC26CFE3FD00A7A803 /* CreateMenuItemView.swift */,
+				5EB14CCB26CFE3FD00A7A803 /* itemRow.swift */,
+				5EB14CCA26CFE3FD00A7A803 /* menuItem.swift */,
+				5EB14CCD26CFE3FD00A7A803 /* Order.swift */,
+				5EB14CCE26CFE3FE00A7A803 /* OrderConsumableView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1390,12 +1413,14 @@
 			files = (
 				5E4E404026C1675100175B57 /* AboutTheApp.swift in Sources */,
 				5E4E404B26C1675200175B57 /* StateVsObservedObject.swift in Sources */,
+				5EB14CD126CFE3FE00A7A803 /* CreateMenuItemView.swift in Sources */,
 				5E1240C726C14429008D42BB /* VisualEffectBlur.swift in Sources */,
 				5E4E403D26C1675100175B57 /* SettingsView.swift in Sources */,
 				5E1240BD26C14429008D42BB /* RingView.swift in Sources */,
 				5E1240D926C14429008D42BB /* FirebaseService.swift in Sources */,
 				5E4E400B26C165E800175B57 /* AppDelegate.swift in Sources */,
 				5E12408B26C14429008D42BB /* moreListRow.swift in Sources */,
+				5EB14CD226CFE3FE00A7A803 /* Order.swift in Sources */,
 				5E1240A926C14429008D42BB /* CGRect+extension.swift in Sources */,
 				5E4E404626C1675100175B57 /* RestaurantListView.swift in Sources */,
 				5E4E405326C1675200175B57 /* OnBoarding.swift in Sources */,
@@ -1406,6 +1431,7 @@
 				5E1240CD26C14429008D42BB /* CodeScanner.swift in Sources */,
 				5E12409B26C14429008D42BB /* Consumable.swift in Sources */,
 				5E1240D126C14429008D42BB /* LottieView.swift in Sources */,
+				5EB14CD326CFE3FE00A7A803 /* OrderConsumableView.swift in Sources */,
 				5E1240BF26C14429008D42BB /* ExplanationReUsableCompents.swift in Sources */,
 				5E4E405226C1675200175B57 /* OneMenuBusiness.swift in Sources */,
 				5E123F8826C12DB0008D42BB /* ContentView.swift in Sources */,
@@ -1425,6 +1451,7 @@
 				5E1240A526C14429008D42BB /* String+extension.swift in Sources */,
 				5E4E404126C1675100175B57 /* autoAppearanceSwitch.swift in Sources */,
 				5E1240C926C14429008D42BB /* ActivityIndicator.swift in Sources */,
+				5EB14CD026CFE3FE00A7A803 /* itemRow.swift in Sources */,
 				5E4E3FE826C14BA700175B57 /* consumableType.swift in Sources */,
 				5E4E403E26C1675100175B57 /* PrivacyPolicy.swift in Sources */,
 				5E1240D526C14429008D42BB /* CoreError.swift in Sources */,
@@ -1449,6 +1476,7 @@
 				5E4E405126C1675200175B57 /* More.swift in Sources */,
 				5E4E404526C1675100175B57 /* selectedRestaurant.swift in Sources */,
 				5EA1EAF926C2AFEF000C7C2E /* ChangeColorThemeSegment.swift in Sources */,
+				5EB14CCF26CFE3FE00A7A803 /* menuItem.swift in Sources */,
 				5E12408F26C14429008D42BB /* ConsumableRow.swift in Sources */,
 				5E123FCC26C12F56008D42BB /* StripePaymentModel.swift in Sources */,
 				5E1240CF26C14429008D42BB /* SearchBarUI.swift in Sources */,
