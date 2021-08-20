@@ -34,7 +34,7 @@ struct Consumable: Identifiable, Hashable,Codable  {
     var hasIngredients : Bool
     var isPopular : Bool
     
-    static let `default` = Consumable(id: "testID", consumableID: "testID", headline: "Vegan", colorTone: "", image: "", title: "Salmon Wafel", subtitle: "breakfast", calories: "3000", price: 12.0, currency: "$", carbs: "20g", carbsPercentage: 20, fat: "20g", fatPercentage: 30, protein: "20g", proteinPercentage: 30, extras: ["Mayo, €4.20", "Ketchup, €8.20", "Onion,"], allergens: ["String"], options: ["Extra egg, €1.20", "Extra bacon, €2.20", "Pickels,"], hasExtras: false, hasOptions: false, hasNutrition: false, hasIngredients: false, isPopular: false)
+    static let `default` = Consumable(id: "testID", consumableID: "testID", headline: "Vegan", colorTone: "", image: "", title: "Salmon Wafel", subtitle: "breakfast", calories: "3000", price: 12.0, currency: "$", carbs: "20g", carbsPercentage: 20, fat: "20g", fatPercentage: 30, protein: "20g", proteinPercentage: 30, extras: ["Mayo,€4.20", "Ketchup,€8.20", "Onion,€"], allergens: ["String"], options: ["Extra egg,€1.20", "Extra bacon,€3.20", "Pickels,€"], hasExtras: false, hasOptions: false, hasNutrition: false, hasIngredients: false, isPopular: false)
     
 }
 
@@ -95,39 +95,52 @@ struct OrderConsumableView: View {
                 }
                 Section(header:Text("Menu Items")){
                     ForEach(self.$orderModel.newOrder.menuItems) { item in
-//                        Button(action: {
-//                            showAddMenuItemSheet = true
-//                            orderModel.selectedMenuItem = item
-//
-//                        }
-//                        ) {
-//                            Text("Customize menu item with name: \(item.name) ")
-//                        }.sheet(isPresented: $showAddMenuItemSheet){
-//
-//                            CreateMenuItemView(orderModel: orderModel)
-//                        }
-                        
+
                         NavigationLink(destination: CreateMenuItemView(menuItem: item, menuItems: self.$orderModel.newOrder.menuItems)){
                             itemRow(menuItem: item)
                         }
                         
                     }
                     
-                    Button(action: {
-                        print(orderModel.newOrder.menuItems)
-                        print( self.orderModel.selectedMenuItem.options[0].enabled)
-                    }
-                    ) {
-                        Text("Print order")
-                       
-                    }
+//                    Button(action: {
+//                        print(orderModel.newOrder.menuItems)
+//                        print( self.orderModel.selectedMenuItem.options[0].enabled)
+//                    }
+//                    ) {
+//                        Text("Print order")
+//
+//                    }
                     
+                    HStack{
+                        Text("Order total").fontWeight(.bold).foregroundColor(Color.blue)
+                        Spacer()
+                        Text("\(calculateOrdeTotal(menuItems: self.orderModel.newOrder.menuItems))")
+                    }.padding(.vertical,10)
                 }
               
             }.navigationTitle("Order")
             
             
         }
+        
+    }
+    
+    func calculateOrdeTotal(menuItems : [menuItem]) -> String {
+        var orderTotal : Double = 0.00
+        for menuItem in menuItems {
+            var totalForMenuItem : Double = menuItem.price
+            for option in menuItem.options where option.enabled == true {
+                totalForMenuItem += Double(option.price) ?? 00.00
+            }
+            for extra in menuItem.extras where extra.enabled == true {
+                totalForMenuItem += Double(extra.price) ?? 00.00
+            }
+            
+            totalForMenuItem = totalForMenuItem * Double(menuItem.quantity)
+            orderTotal = orderTotal + totalForMenuItem
+        }
+        
+        return String(format: "%.2f", orderTotal)
         
     }
 }

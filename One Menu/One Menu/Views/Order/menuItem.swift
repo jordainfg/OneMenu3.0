@@ -17,7 +17,7 @@ struct menuItem : Identifiable {
     var quantity : Int
     var price : Double
     
-    static let `default` = menuItem(id : "e" ,name: "PANCAKE CARAMELISED BANANA PANCAKE CARAMELISED BANANA", type: .custom, options: [Option.default, Option.defaultWithoutPrice], extras: [Option.default, Option.defaultWithoutPrice], quantity: 1, price: 15.25)
+    static let `default` = menuItem(id : "e" ,name: "Morning Pancakes", type: .custom, options: [Option.default, Option.defaultWithoutPrice], extras: [Option.default, Option.defaultWithoutPrice], quantity: 1, price: 15.25)
     
     static let `all` = [menuItem(consumable: Consumable.default), menuItem.default]
     
@@ -29,18 +29,18 @@ extension menuItem{
         self.name = consumable.title
         self.type = .custom
         self.options = consumable.options.compactMap { option in
-            let optionString = option.components(separatedBy: ",")
+            let optionString = option.components(separatedBy: ",€")
             if let optionStringFirst = optionString.first {
-                return Option(name: optionStringFirst, price: optionString.last.emptyStr.isEmpty ? " €0.00" : optionString.last.emptyStr, enabled: false)
+                return Option(name: optionStringFirst, price: optionString.last.emptyStr.isEmpty ? "0.00" : optionString.last.emptyStr, enabled: false)
             } else {
                 return nil
             }
             
         }
         self.extras = consumable.extras.compactMap { extra in
-            let extraString = extra.components(separatedBy: ",")
+            let extraString = extra.components(separatedBy: ",€")
             if let extraStringFirst = extraString.first {
-                return Option(name: extraStringFirst, price: extraString.last.emptyStr.isEmpty ? " €0.00" : extraString.last.emptyStr, enabled: false)
+                return Option(name: extraStringFirst, price: extraString.last.emptyStr.isEmpty ? "0.00" : extraString.last.emptyStr, enabled: false)
             } else {
                 return nil
             }
