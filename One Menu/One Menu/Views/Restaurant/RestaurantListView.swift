@@ -101,7 +101,7 @@ struct RestaurantListView: View {
                 List{
                     Section {
                         ForEach(store.Restaurants.filter { $0.name.lowercased().hasSubstring(searchText.lowercased()) || searchText.isEmpty }) { item in
-                            NavigationLink(destination: selectedRestaurant(store: store, selectedRestaurant: item)) {
+                            NavigationLink(destination: TabViewForRestaurant(selectedRestaurant: item, store: store)) {
                                 if store.Restaurants.count==1{
                                     RestaurantRow(item: item)
                                 } else{

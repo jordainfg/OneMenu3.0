@@ -13,6 +13,8 @@ struct TintOverlay: View {
       Text(" ")
     }
     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-    .background(Color.black)
+    .background(LinearGradient(gradient: Gradient(colors: [.white, .clear]), startPoint: .topLeading, endPoint: .bottomTrailing)/// blur the image
+                  //  .background(VisualEffectBlur(blurStyle: .extraLight))
+                    )
   }
 }

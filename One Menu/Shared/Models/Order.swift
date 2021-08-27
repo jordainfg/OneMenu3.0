@@ -31,13 +31,14 @@ extension Order {
         forCustomerID = "jordain"
         orderDate = Date()
         subTotal = 0.0
-        menuItems = menuItem.all
+        menuItems = []
     }
 }
 
 enum orderType : String, Equatable, CaseIterable {
     case pickup = "Pick up"
     case seated = "Dine-in"
+    case delivery = "Delivery"
     //case delivery
     var localizedName: LocalizedStringKey { LocalizedStringKey(rawValue) }
 }

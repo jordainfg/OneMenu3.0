@@ -187,7 +187,6 @@ extension View {
         self.transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.6)))
     }
 }
-
 extension Binding {
     func onChange(_ handler: @escaping () -> Void) -> Binding<Value> {
         Binding(
@@ -199,3 +198,5 @@ extension Binding {
         )
     }
 }
+
+

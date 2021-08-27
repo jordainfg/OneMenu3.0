@@ -50,7 +50,7 @@ struct Restaurant: Identifiable, Hashable,Codable {
         self.hasMultiLanguageSupport = dictionary["hasMultiLanguageSupport"] as! Bool
         self.isEditing = dictionary["isEditing"] as! Bool
     }
-    
+  
     
 }
 

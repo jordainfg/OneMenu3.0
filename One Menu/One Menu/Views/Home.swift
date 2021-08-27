@@ -13,19 +13,7 @@ struct Home: View {
     
     @AppStorage("showHyperLinkedRestaurant") var showHyperLinkedRestaurant : Bool = false
     var body: some View {
-        TabView{
-            RestaurantListView( store: store)
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    //Text("Home")
-                }
-            More(store: store)
-                .tabItem{
-                    Image(systemName: "ellipsis.circle")
-                       
-                    //Text("More")
-                }
-        }.environment(\.locale, Locale(identifier: language))
+        RestaurantListView( store: store).environment(\.locale, Locale(identifier: language))
         .accentColor(Color.primaryOne)
         .fullScreenCover(isPresented: $showHyperLinkedRestaurant){
             

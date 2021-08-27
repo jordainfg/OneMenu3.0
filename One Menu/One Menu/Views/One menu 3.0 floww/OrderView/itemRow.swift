@@ -17,7 +17,7 @@ struct itemRow: View {
             VStack(alignment: .leading) {
                 
                 HStack {
-                    Text(menuItem.name).font(.subheadline)
+                    Text(menuItem.title).font(.subheadline)
                     Spacer()
                     Text(calculateTotal(menuItem: menuItem)).font(.subheadline).foregroundColor(Color.secondary)
                 }
@@ -32,8 +32,8 @@ struct itemRow: View {
                         Text("\(option.price)")
                             .font(.caption)
                             .foregroundColor(.secondary)
-                    }.padding(.leading,5)
-                }
+                    }
+                }.padding(.leading,5)
                 
                 ForEach(menuItem.extras.filter{ $0.enabled == true}, id: \.self) { extra in
                     HStack {
@@ -45,7 +45,7 @@ struct itemRow: View {
                             .font(.caption)
                             .foregroundColor(.secondary)
                     }
-                }
+                }.padding(.leading,5)
                 
                
                

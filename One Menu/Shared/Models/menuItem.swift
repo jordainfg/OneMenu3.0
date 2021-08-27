@@ -10,23 +10,26 @@ import SwiftUI
 
 struct menuItem : Identifiable {
     var id : String
-    var name : String
+    var title : String
+    var subTitle : String
     var type : menuItemType
     var options = [Option]()
     var extras = [Option]()
     var quantity : Int
     var price : Double
+    var consumable : Consumable
     
-    static let `default` = menuItem(id : "e" ,name: "Morning Pancakes", type: .custom, options: [Option.default, Option.defaultWithoutPrice], extras: [Option.default, Option.defaultWithoutPrice], quantity: 1, price: 15.25)
+//    static let `default` = menuItem(id : "e" ,title: "Morning Pancakes", subTitle: "A pancake is a flat cake, often thin and round, prepared from a starch-based batter that may contain eggs, milk and butter and cooked on a hot surface such as a griddle or frying pan, often frying with oil or butter.",type: .custom, options: [Option.default, Option.defaultWithoutPrice], extras: [Option.default, Option.defaultWithoutPrice], quantity: 1, price: 15.25, consumable: Consumable)
     
-    static let `all` = [menuItem(consumable: Consumable.default), menuItem.default]
+   // static let `all` = [menuItem(consumable: Consumable.default), menuItem.default]
     
 }
 extension menuItem{
     
     init(consumable: Consumable) {
         self.id = consumable.id
-        self.name = consumable.title
+        self.title = consumable.title
+        self.subTitle = consumable.title
         self.type = .custom
         self.options = consumable.options.compactMap { option in
             let optionString = option.components(separatedBy: ",€")
@@ -48,6 +51,7 @@ extension menuItem{
         }
         self.quantity = 1
         self.price = consumable.price
+        self.consumable = consumable
     }
     
 }

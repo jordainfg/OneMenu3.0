@@ -32,6 +32,7 @@ struct Consumable: Identifiable, Hashable,Codable  {
     var hasNutrition: Bool
     var hasIngredients : Bool
     var isPopular : Bool
+    var isMeal : Bool
     
     init?(dictionary: [String: Any]) {
         guard (dictionary["consumableID"] as? String) != nil else { return nil }
@@ -59,7 +60,7 @@ struct Consumable: Identifiable, Hashable,Codable  {
         self.hasNutrition = dictionary["hasNutrition"] as! Bool
         self.hasIngredients = dictionary["hasIngredients"] as! Bool
         self.isPopular = dictionary["isPopular"] as! Bool
-
+        self.isMeal = dictionary["isMeal"] as! Bool
     }
     
 }

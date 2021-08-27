@@ -55,7 +55,7 @@ class DataStore: ObservableObject, Identifiable{
     let db = Firestore.firestore()
     let storage = Storage.storage()
     
-
+    @Published var cartItems : [menuItem] = []
    
     @Published var Restaurants : [Restaurant] = []
 
@@ -161,7 +161,7 @@ class DataStore: ObservableObject, Identifiable{
     
     func getConsumables(collectionName: collectionName,languageType: languageType, completionHandler: @escaping (Result<Response, CoreError>) -> Void){
         
-        let path = createPath(collectionName: collectionName,languageType : languageType)
+        let path = createPath(collectionName: .Meals,languageType : .Dutch)
             db.collection(path).getDocuments() { (querySnapshot, err) in
                 
                 if let err = err {
@@ -196,7 +196,7 @@ class DataStore: ObservableObject, Identifiable{
 
     func getConsumableCategories(collectionName: collectionName,languageType: languageType, completionHandler: @escaping (Result<Response, CoreError>) -> Void){
     
-        let path = createPath(collectionName: collectionName,languageType : languageType)
+        let path = createPath(collectionName: .MealCategories,languageType : .Dutch)
             db.collection(path).getDocuments() { (querySnapshot, err) in
 
                 if let err = err {

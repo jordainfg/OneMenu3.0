@@ -16,6 +16,8 @@ struct One_MenuApp: App {
     
     @AppStorage("selectedColorScheme") private var selectedColorScheme : colorScheme = .system
     
+    let persistenceController = PersistenceController.shared // CoreData
+    
     let appState = AppState()
     
     var body: some Scene {
@@ -24,6 +26,7 @@ struct One_MenuApp: App {
                 .environmentObject(appState)
                 .environment(\.colorScheme, selectedColorScheme == .system ? UITraitCollection.current.userInterfaceStyle == .dark ? .dark : .light : selectedColorScheme == .dark ? .dark : .light )
                 .onContinueUserActivity(NSUserActivityTypeBrowsingWeb, perform: handleUserActivity)
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .onOpenURL { incomingURL in
                     print("Incoming URL parameter is: \(incomingURL)")
                     
