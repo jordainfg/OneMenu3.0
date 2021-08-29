@@ -21,3 +21,10 @@ struct HeaderForSection: View {
             .padding(.bottom, 7)
     }
 }
+
+struct SectionText2: View {
+    var text : String
+    var body: some View {
+        Text(text).font(.headline).fontWeight(.bold)
+    }
+}

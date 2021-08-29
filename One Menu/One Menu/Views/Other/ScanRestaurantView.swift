@@ -20,7 +20,7 @@ struct ScanRestaurantView: View {
     
     @AppStorage("ScannedRestaurant") var ScannedRestaurant : String = ""
     
-    func handleScan(result: Result<String, CodeScannerView.ScanError>) {
+    func handleScan(result: Result<String, QrCodeScannerView.ScanError>) {
        
         switch result {
         case .success(let code):
@@ -109,7 +109,7 @@ struct ScanRestaurantView: View {
             .padding(.bottom, 40)
             .zIndex(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
             
-            CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson\npaul@hackingwithswift.com", completion: self.handleScan)
+            QrCodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson\npaul@hackingwithswift.com", completion: self.handleScan)
                 .cornerRadius(5)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             

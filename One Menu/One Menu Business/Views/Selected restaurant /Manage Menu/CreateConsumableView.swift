@@ -221,7 +221,7 @@ struct CreateConsumableView: View {
                             }
                             .buttonStyle(SquishableButtonStyle(fadeOnPress: true))
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                                ImagePicker(sourceType: sourceType, image: self.$inputImage)
+                                ImagePickerView(sourceType: sourceType, image: self.$inputImage)
                             }
                             
                             

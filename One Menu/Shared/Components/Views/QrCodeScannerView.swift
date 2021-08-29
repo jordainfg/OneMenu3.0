@@ -36,17 +36,17 @@ import UIKit
             }
  
  */
-public struct CodeScannerView: UIViewControllerRepresentable {
+public struct QrCodeScannerView: UIViewControllerRepresentable {
     public enum ScanError: Error {
         case badInput, badOutput
     }
 
   
     public class ScannerCoordinator: NSObject, AVCaptureMetadataOutputObjectsDelegate {
-        var parent: CodeScannerView
+        var parent: QrCodeScannerView
         var codeFound = false
 
-        init(parent: CodeScannerView) {
+        init(parent: QrCodeScannerView) {
             self.parent = parent
         }
 
@@ -344,7 +344,7 @@ public struct CodeScannerView: UIViewControllerRepresentable {
 
 struct CodeScannerView_Previews: PreviewProvider {
     static var previews: some View {
-        CodeScannerView(codeTypes: [.qr]) { result in
+        QrCodeScannerView(codeTypes: [.qr]) { result in
             // do nothing
         }
     }

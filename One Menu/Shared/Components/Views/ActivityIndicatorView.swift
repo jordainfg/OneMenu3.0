@@ -21,3 +21,23 @@ struct ActivityIndicator: UIViewRepresentable {
     }
 }
 
+
+struct CustomProgressView: View {
+    @State var showText : Bool = false
+    var body: some View {
+        VStack{
+            Spacer()
+            VStack{
+                ProgressView()
+                if showText{
+                    Text("One moment please").fontWeight(.bold).foregroundColor(.secondary).fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            
+            Spacer()
+        }
+        .frame(maxWidth:.infinity,maxHeight: .infinity)
+        .background(BlurView(style: .light).opacity(0.965))
+        .edgesIgnoringSafeArea(.all)
+    }
+}

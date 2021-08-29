@@ -308,3 +308,15 @@ struct NavigationDrawerUserButton: View {
         })
     }
 }
+
+struct closeButtonNavBarItem: View {
+    
+    var customAction : () -> ()
+    var body: some View {
+        Button(action: {
+            customAction()
+        }) {
+            Text("Close").foregroundColor(.red).fontWeight(.semibold)
+        }
+    }
+}

@@ -39,6 +39,7 @@ import Combine
 import Firebase
 import FirebaseStorage
 import FirebaseFirestore
+
 class DataStore: ObservableObject, Identifiable{
     
     @Published var didScanRestaurant : Bool = false

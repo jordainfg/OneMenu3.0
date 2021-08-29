@@ -22,6 +22,15 @@ extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
         clipShape( RoundedCorner(radius: radius, corners: corners) )
     }
+    /*  How to activate: SomeView().cardStyle() * */
+     func cardStyle(color: Color, cornerRadius: CGFloat) -> some View {
+         return self
+             .background(color)
+             .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+             .shadow(color: Color.blue.opacity(0.3), radius: 20, x: 0, y: 10)
+     }
+  
+     
 }
 struct RoundedCorner: Shape {
 
