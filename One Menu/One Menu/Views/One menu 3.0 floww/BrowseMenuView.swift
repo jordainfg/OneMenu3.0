@@ -161,17 +161,17 @@ struct ConsumableBrowseList<consumableContent:View, categoryContent:View> : View
             
             TabView(selection: $selectedSegment) {
                 List(searchedConsumables.filter{$0.isMeal == true}, rowContent: consumableRow)
-                    .listStyle(InsetGroupedListStyle())
+                    .listStyle(PlainListStyle())
                     .onAppear(perform: applyFilterForConsumable)
                     .tag(viewsForScrollSegmentedControl.meals)
                 
                 List(searchedConsumables.filter{$0.isMeal == false}, rowContent: consumableRow)
-                    .listStyle(InsetGroupedListStyle())
+                    .listStyle(PlainListStyle())
                     .onAppear(perform: applyFilterForConsumable)
                     .tag(viewsForScrollSegmentedControl.beverages)
                 
                 List(searchedCategories, rowContent: categoryRow)
-                    .listStyle(InsetGroupedListStyle())
+                    .listStyle(PlainListStyle())
                     .onAppear(perform: applyFilterForCategory)
                     .tag(viewsForScrollSegmentedControl.categories)
                 

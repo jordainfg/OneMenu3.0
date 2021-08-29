@@ -9,9 +9,9 @@ import SwiftUI
 import CoreData
 import SDWebImageSwiftUI
 struct FavoritesView: View {
-    @ObservedObject var store : DataStore
-   // @State var consumables : [Consumable] = []
     
+    @ObservedObject var store : DataStore
+
     @Environment(\.managedObjectContext) private var viewContext
     
     @State var imagess : [String : WebImage] = [String: WebImage]()
@@ -27,35 +27,31 @@ struct FavoritesView: View {
     
     var body: some View {
        
-                
-                List{
-                    Picker(selection: $selectedSegment.animation(), label: Text("")) {
-                        ForEach(segements, id: \.self) { segment in
-                            Text(segment.rawValue)
-                        }
+        VStack{
+                Picker(selection: $selectedSegment.animation(), label: Text("")) {
+                    ForEach(segements, id: \.self) { segment in
+                        Text(segment.rawValue)
                     }
-                    .pickerStyle(SegmentedPickerStyle())
-                    
-                    Section{
-                        ForEach(store.consumables.filter { consumable in
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding(.horizontal)
+                
+                List {
+                    ForEach(store.consumables.filter { consumable in
                         
                         favoritedConsumables.contains(where: {
                             $0.consumableID == consumable.consumableID &&
                             $0.restaurantID == store.selectedRestaurant!.restaurantID &&
                             $0.isMeal == (selectedSegment == .meals)
-                            
-                        }
-                        )}
-                            
-                    ) { consumable in
+                        })
                         
+                    })
+                    { consumable in
                             ConsumableRow(item: consumable, image : imagess[consumable.consumableID])
                     }
                     .onDelete(perform: delete)
-                    }
                 }
-                
-                .listStyle(InsetGroupedListStyle())
+                .listStyle(PlainListStyle())
                 .toolbar {
                     EditButton()
                 }
@@ -70,11 +66,12 @@ struct FavoritesView: View {
                                             .multilineTextAlignment(.center)
                                     }.padding()
                                 }
-            })
+                })
             
-            
+        }
         
     }
+    
     func delete(at indexSet: IndexSet) {
         for index in indexSet {
             viewContext.delete(favoritedConsumables[index])
@@ -85,10 +82,5 @@ struct FavoritesView: View {
             print(error.localizedDescription)
         }
     }
-}
 
-//struct FavoritesView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FavoritesView()
-//    }
-//}
+}
