@@ -8,6 +8,32 @@
 import UIKit
 import SwiftUI
 
+// MARK: - Colors
+
+
+extension Color {
+    public static var primaryOne: Color {
+        return Color(#colorLiteral(red: 0.9882352941, green: 0.4470588235, blue: 0.3843137255, alpha: 1))
+    }
+    public static var primaryTwo: Color {
+        return Color(#colorLiteral(red: 0.768627451, green: 0.2509803922, blue: 0.2156862745, alpha: 1))
+    }
+    public static var secondaryOne: Color {
+        return Color(#colorLiteral(red: 0.1333333333, green: 0.2196078431, blue: 0.262745098, alpha: 1))
+    }
+    public static var secondaryTwo: Color {
+        return Color(#colorLiteral(red: 0.4549019608, green: 0.5490196078, blue: 0.6705882353, alpha: 1))
+    }
+    public static var NeutralDark: Color {
+        return Color(#colorLiteral(red: 0.1019607843, green: 0.1294117647, blue: 0.3176470588, alpha: 1))
+    }
+    public static var NeutralLight: Color {
+        return Color(#colorLiteral(red: 0.8901960784, green: 0.9098039216, blue: 1, alpha: 1))
+    }
+}
+
+
+
 extension Color {
    
     init?(hexString: String) {

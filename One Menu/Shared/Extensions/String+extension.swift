@@ -89,4 +89,13 @@ public extension String {
 
         return dateFormatter.date(from: date) ?? ISO8601DateFormatter().date(from: self)
     }
+    
+    /// Returns `true` if this string contains the provided substring,
+    /// or if the substring is empty. Otherwise, returns `false`.
+    ///
+    /// - Parameter substring: The substring to search for within
+    ///   this string.
+    func hasSubstring(_ substring: String) -> Bool {
+        substring.isEmpty || contains(substring)
+    }
 }

@@ -1,8 +1,8 @@
 //
-//  CustomModifiers.swift
-//  One Menu
+//  Text.swift
+//  Text
 //
-//  Created by Jordain Gijsbertha on 02/11/2020.
+//  Created by Jordain on 29/08/2021.
 //
 
 import Foundation

@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+
 extension UIApplication {
     class func isFirstLaunch() -> Bool {
     if !UserDefaults.standard.bool(forKey: "HasLaunched") {

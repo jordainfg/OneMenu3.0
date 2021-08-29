@@ -1,17 +1,14 @@
 //
-//  RingView.swift
-//  One_Menu
+//  Views.swift
+//  Views
 //
-//  Created by Jordain Gijsbertha on 07/08/2020.
+//  Created by Jordain on 29/08/2021.
 //
 
-
+import Foundation
 import SwiftUI
 
-// Usage
 
-//RingView(color1: #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1), color2: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), width: 50, height: 50, percent: 78, show: $show)
-//.animation(Animation.easeInOut.delay(0.3))
 struct RingView: View {
     
     var color1 = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
@@ -55,8 +52,18 @@ struct RingView: View {
     }
 }
 
-struct RingView_Previews: PreviewProvider {
-    static var previews: some View {
-        RingView(color1: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), color2: #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), width: 44, height: 44, percent: 40, show: .constant(true))
+
+
+extension View{
+    
+   /*  How to activate: SomeView().cardStyle() * */
+    func cardStyle(color: Color, cornerRadius: CGFloat) -> some View {
+        return self
+            .background(color)
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            .shadow(color: Color.blue.opacity(0.3), radius: 20, x: 0, y: 10)
     }
+ 
+    
+    
 }

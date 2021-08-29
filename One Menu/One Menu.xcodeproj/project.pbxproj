@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E10B73026DBB5DC00C6F93E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B72F26DBB5DC00C6F93E /* Buttons.swift */; };
+		5E10B73226DBB86F00C6F93E /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73126DBB86F00C6F93E /* Views.swift */; };
+		5E10B73426DBB8B500C6F93E /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73326DBB8B500C6F93E /* Text.swift */; };
+		5E10B73626DBB93E00C6F93E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B72F26DBB5DC00C6F93E /* Buttons.swift */; };
+		5E10B73726DBB93F00C6F93E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B72F26DBB5DC00C6F93E /* Buttons.swift */; };
+		5E10B73826DBB93F00C6F93E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B72F26DBB5DC00C6F93E /* Buttons.swift */; };
+		5E10B73926DBB95200C6F93E /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73126DBB86F00C6F93E /* Views.swift */; };
+		5E10B73A26DBB95300C6F93E /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73126DBB86F00C6F93E /* Views.swift */; };
+		5E10B73B26DBB95300C6F93E /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73126DBB86F00C6F93E /* Views.swift */; };
+		5E10B73C26DBB96700C6F93E /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73326DBB8B500C6F93E /* Text.swift */; };
+		5E10B73D26DBB96700C6F93E /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73326DBB8B500C6F93E /* Text.swift */; };
+		5E10B73E26DBB96800C6F93E /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73326DBB8B500C6F93E /* Text.swift */; };
 		5E123F8626C12DB0008D42BB /* One_MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F8526C12DB0008D42BB /* One_MenuApp.swift */; };
 		5E123F8826C12DB0008D42BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E123F8726C12DB0008D42BB /* ContentView.swift */; };
 		5E123F8D26C12DB0008D42BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E123F8C26C12DB0008D42BB /* Preview Assets.xcassets */; };
@@ -90,27 +102,19 @@
 		5E12409F26C14429008D42BB /* PartnerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406326C14429008D42BB /* PartnerRequest.swift */; };
 		5E1240A126C14429008D42BB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406426C14429008D42BB /* Restaurant.swift */; };
 		5E1240A226C14429008D42BB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406426C14429008D42BB /* Restaurant.swift */; };
-		5E1240A326C14429008D42BB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406726C14429008D42BB /* UIView+Extension.swift */; };
+		5E1240A326C14429008D42BB /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406726C14429008D42BB /* UIView+extension.swift */; };
 		5E1240A526C14429008D42BB /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406826C14429008D42BB /* String+extension.swift */; };
 		5E1240A626C14429008D42BB /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406826C14429008D42BB /* String+extension.swift */; };
 		5E1240A726C14429008D42BB /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406926C14429008D42BB /* Color+extension.swift */; };
 		5E1240A826C14429008D42BB /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406926C14429008D42BB /* Color+extension.swift */; };
 		5E1240A926C14429008D42BB /* CGRect+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406A26C14429008D42BB /* CGRect+extension.swift */; };
-		5E1240AD26C14429008D42BB /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406C26C14429008D42BB /* Device.swift */; };
-		5E1240AF26C14429008D42BB /* UIApplication+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+ext.swift */; };
-		5E1240B026C14429008D42BB /* UIApplication+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+ext.swift */; };
-		5E1240B126C14429008D42BB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406F26C14429008D42BB /* String+Ext.swift */; };
-		5E1240B226C14429008D42BB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406F26C14429008D42BB /* String+Ext.swift */; };
+		5E1240AD26C14429008D42BB /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406C26C14429008D42BB /* UIDevice+extension.swift */; };
+		5E1240AF26C14429008D42BB /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+extension.swift */; };
+		5E1240B026C14429008D42BB /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+extension.swift */; };
 		5E1240B326C14429008D42BB /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407026C14429008D42BB /* View+ext.swift */; };
 		5E1240B426C14429008D42BB /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407026C14429008D42BB /* View+ext.swift */; };
 		5E1240B726C14429008D42BB /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407226C14429008D42BB /* HapticService.swift */; };
 		5E1240B826C14429008D42BB /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407226C14429008D42BB /* HapticService.swift */; };
-		5E1240B926C14429008D42BB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407426C14429008D42BB /* Styles.swift */; };
-		5E1240BA26C14429008D42BB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407426C14429008D42BB /* Styles.swift */; };
-		5E1240BB26C14429008D42BB /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407526C14429008D42BB /* CustomModifiers.swift */; };
-		5E1240BC26C14429008D42BB /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407526C14429008D42BB /* CustomModifiers.swift */; };
-		5E1240BD26C14429008D42BB /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407726C14429008D42BB /* RingView.swift */; };
-		5E1240BE26C14429008D42BB /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407726C14429008D42BB /* RingView.swift */; };
 		5E1240BF26C14429008D42BB /* ExplanationReUsableCompents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407826C14429008D42BB /* ExplanationReUsableCompents.swift */; };
 		5E1240C026C14429008D42BB /* ExplanationReUsableCompents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407826C14429008D42BB /* ExplanationReUsableCompents.swift */; };
 		5E1240C126C14429008D42BB /* LibraryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407926C14429008D42BB /* LibraryContent.swift */; };
@@ -151,10 +155,6 @@
 		5E1240EC26C14580008D42BB /* moreListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12405826C14429008D42BB /* moreListRow.swift */; };
 		5E1240ED26C145BB008D42BB /* RestaurantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12405E26C14429008D42BB /* RestaurantRow.swift */; };
 		5E1240EE26C145BC008D42BB /* RestaurantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12405E26C14429008D42BB /* RestaurantRow.swift */; };
-		5E1240EF26C14622008D42BB /* HidekeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406B26C14429008D42BB /* HidekeyBoard.swift */; };
-		5E1240F026C14622008D42BB /* HidekeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406B26C14429008D42BB /* HidekeyBoard.swift */; };
-		5E1240F126C14691008D42BB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407426C14429008D42BB /* Styles.swift */; };
-		5E1240F226C14692008D42BB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407426C14429008D42BB /* Styles.swift */; };
 		5E1240F526C146EC008D42BB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12408226C14429008D42BB /* LottieView.swift */; };
 		5E1240F626C146EC008D42BB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12408226C14429008D42BB /* LottieView.swift */; };
 		5E1240F726C146EC008D42BB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12408226C14429008D42BB /* LottieView.swift */; };
@@ -333,12 +333,10 @@
 		5EB11CD826C29F5100F85734 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406926C14429008D42BB /* Color+extension.swift */; };
 		5EB11CD926C29F6400F85734 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407D26C14429008D42BB /* VisualEffectBlur.swift */; };
 		5EB11CDA26C29F6500F85734 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407D26C14429008D42BB /* VisualEffectBlur.swift */; };
-		5EB11CDB26C29F9100F85734 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407526C14429008D42BB /* CustomModifiers.swift */; };
-		5EB11CDC26C29F9200F85734 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12407526C14429008D42BB /* CustomModifiers.swift */; };
 		5EB11CDD26C2A05E00F85734 /* SpecialConsumableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12405926C14429008D42BB /* SpecialConsumableCard.swift */; };
 		5EB11CDE26C2A05E00F85734 /* SpecialConsumableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12405926C14429008D42BB /* SpecialConsumableCard.swift */; };
-		5EB11CDF26C2A0A100F85734 /* UIApplication+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+ext.swift */; };
-		5EB11CE026C2A0A100F85734 /* UIApplication+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+ext.swift */; };
+		5EB11CDF26C2A0A100F85734 /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+extension.swift */; };
+		5EB11CE026C2A0A100F85734 /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12406E26C14429008D42BB /* UIApplication+extension.swift */; };
 		5EE7DBC826D92185005FE862 /* BrowseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBC226D92184005FE862 /* BrowseMenuView.swift */; };
 		5EE7DBC926D92185005FE862 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBC326D92184005FE862 /* HomeView.swift */; };
 		5EE7DBCA26D92185005FE862 /* RestaurantHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBC426D92184005FE862 /* RestaurantHomeView.swift */; };
@@ -381,6 +379,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E10B72F26DBB5DC00C6F93E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		5E10B73126DBB86F00C6F93E /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		5E10B73326DBB8B500C6F93E /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		5E123F8226C12DB0008D42BB /* One Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E123F8526C12DB0008D42BB /* One_MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_MenuApp.swift; sourceTree = "<group>"; };
 		5E123F8726C12DB0008D42BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -419,19 +420,14 @@
 		5E12406226C14429008D42BB /* ConsumableCategorie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsumableCategorie.swift; sourceTree = "<group>"; };
 		5E12406326C14429008D42BB /* PartnerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnerRequest.swift; sourceTree = "<group>"; };
 		5E12406426C14429008D42BB /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		5E12406726C14429008D42BB /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5E12406726C14429008D42BB /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		5E12406826C14429008D42BB /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		5E12406926C14429008D42BB /* Color+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
 		5E12406A26C14429008D42BB /* CGRect+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+extension.swift"; sourceTree = "<group>"; };
-		5E12406B26C14429008D42BB /* HidekeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HidekeyBoard.swift; sourceTree = "<group>"; };
-		5E12406C26C14429008D42BB /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		5E12406E26C14429008D42BB /* UIApplication+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+ext.swift"; sourceTree = "<group>"; };
-		5E12406F26C14429008D42BB /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		5E12406C26C14429008D42BB /* UIDevice+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
+		5E12406E26C14429008D42BB /* UIApplication+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+extension.swift"; sourceTree = "<group>"; };
 		5E12407026C14429008D42BB /* View+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
 		5E12407226C14429008D42BB /* HapticService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
-		5E12407426C14429008D42BB /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
-		5E12407526C14429008D42BB /* CustomModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
-		5E12407726C14429008D42BB /* RingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		5E12407826C14429008D42BB /* ExplanationReUsableCompents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplanationReUsableCompents.swift; sourceTree = "<group>"; };
 		5E12407926C14429008D42BB /* LibraryContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryContent.swift; sourceTree = "<group>"; };
 		5E12407A26C14429008D42BB /* CustomComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomComponents.swift; sourceTree = "<group>"; };
@@ -644,6 +640,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E10B73526DBB90C00C6F93E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E12407D26C14429008D42BB /* VisualEffectBlur.swift */,
+				5E12407E26C14429008D42BB /* ActivityIndicator.swift */,
+				5E12407F26C14429008D42BB /* Searchbar.swift */,
+				5E12408026C14429008D42BB /* CodeScanner.swift */,
+				5E12408126C14429008D42BB /* SearchBarUI.swift */,
+				5E12408226C14429008D42BB /* LottieView.swift */,
+				5E12408326C14429008D42BB /* TintOverlay.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E10B73F26DBBEE300C6F93E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E3FFC26C14EC500175B57 /* ConsumablesForSelectedCategorie.swift */,
+				5E4E3FF126C14DC800175B57 /* SettingsOption.swift */,
+				5E4E3FFF26C14EEB00175B57 /* ConsumableForSelectionDetail.swift */,
+				5E4E3FF926C14E8B00175B57 /* MainViewForConsumables.swift */,
+				5E12405826C14429008D42BB /* moreListRow.swift */,
+				5E12405926C14429008D42BB /* SpecialConsumableCard.swift */,
+				5E12405A26C14429008D42BB /* ConsumableRow.swift */,
+				5E12405D26C14429008D42BB /* ConsumableCategorieIcon.swift */,
+				5E12405E26C14429008D42BB /* RestaurantRow.swift */,
+				5E4E3FF626C14DF000175B57 /* ChooseLanguageView.swift */,
+				5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5E123F7926C12DB0008D42BB = {
 			isa = PBXGroup;
 			children = (
@@ -695,22 +723,16 @@
 		5E123F9326C12DBD008D42BB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5E12408426C14429008D42BB /* Networking & DataStore */,
 				5E12407B26C14429008D42BB /* ReadMe.swift */,
 				5E12407226C14429008D42BB /* HapticService.swift */,
 				5E123FCB26C12F56008D42BB /* StripePaymentModel.swift */,
 				5E12407A26C14429008D42BB /* CustomComponents.swift */,
-				5E4E3FFC26C14EC500175B57 /* ConsumablesForSelectedCategorie.swift */,
-				5E4E3FF126C14DC800175B57 /* SettingsOption.swift */,
-				5E4E3FFF26C14EEB00175B57 /* ConsumableForSelectionDetail.swift */,
-				5E4E3FF926C14E8B00175B57 /* MainViewForConsumables.swift */,
-				5E4E3FF626C14DF000175B57 /* ChooseLanguageView.swift */,
-				5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */,
+				5E10B73F26DBBEE300C6F93E /* Views */,
 				5E12406026C14429008D42BB /* Models */,
 				5E12405726C14429008D42BB /* Components */,
 				5E12406526C14429008D42BB /* Extensions */,
 				5E12407326C14429008D42BB /* Library */,
-				5E12408426C14429008D42BB /* Networking & DataStore */,
-				5E12407C26C14429008D42BB /* Resources */,
 				5E12408926C14429008D42BB /* SharedAssets.xcassets */,
 				5E4E406426C169C400175B57 /* Localizable.strings */,
 			);
@@ -828,11 +850,10 @@
 		5E12405726C14429008D42BB /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				5E12405826C14429008D42BB /* moreListRow.swift */,
-				5E12405926C14429008D42BB /* SpecialConsumableCard.swift */,
-				5E12405A26C14429008D42BB /* ConsumableRow.swift */,
-				5E12405D26C14429008D42BB /* ConsumableCategorieIcon.swift */,
-				5E12405E26C14429008D42BB /* RestaurantRow.swift */,
+				5E10B73526DBB90C00C6F93E /* Views */,
+				5E10B72F26DBB5DC00C6F93E /* Buttons.swift */,
+				5E10B73126DBB86F00C6F93E /* Views.swift */,
+				5E10B73326DBB8B500C6F93E /* Text.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -854,59 +875,24 @@
 		5E12406526C14429008D42BB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5E12406626C14429008D42BB /* UIKit Extensions */,
-				5E12406D26C14429008D42BB /* SwiftUI */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		5E12406626C14429008D42BB /* UIKit Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5E12406C26C14429008D42BB /* Device.swift */,
-				5E12406726C14429008D42BB /* UIView+Extension.swift */,
+				5E12406C26C14429008D42BB /* UIDevice+extension.swift */,
+				5E12406E26C14429008D42BB /* UIApplication+extension.swift */,
+				5E12406726C14429008D42BB /* UIView+extension.swift */,
 				5E12406826C14429008D42BB /* String+extension.swift */,
 				5E12406926C14429008D42BB /* Color+extension.swift */,
+				5E12407026C14429008D42BB /* View+ext.swift */,
 				5E12406A26C14429008D42BB /* CGRect+extension.swift */,
 			);
-			path = "UIKit Extensions";
-			sourceTree = "<group>";
-		};
-		5E12406D26C14429008D42BB /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				5E12406B26C14429008D42BB /* HidekeyBoard.swift */,
-				5E12406E26C14429008D42BB /* UIApplication+ext.swift */,
-				5E12406F26C14429008D42BB /* String+Ext.swift */,
-				5E12407026C14429008D42BB /* View+ext.swift */,
-			);
-			path = SwiftUI;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5E12407326C14429008D42BB /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				5E12407726C14429008D42BB /* RingView.swift */,
-				5E12407426C14429008D42BB /* Styles.swift */,
-				5E12407526C14429008D42BB /* CustomModifiers.swift */,
 				5E12407826C14429008D42BB /* ExplanationReUsableCompents.swift */,
 				5E12407926C14429008D42BB /* LibraryContent.swift */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		5E12407C26C14429008D42BB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5E12407D26C14429008D42BB /* VisualEffectBlur.swift */,
-				5E12407E26C14429008D42BB /* ActivityIndicator.swift */,
-				5E12407F26C14429008D42BB /* Searchbar.swift */,
-				5E12408026C14429008D42BB /* CodeScanner.swift */,
-				5E12408126C14429008D42BB /* SearchBarUI.swift */,
-				5E12408226C14429008D42BB /* LottieView.swift */,
-				5E12408326C14429008D42BB /* TintOverlay.swift */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5E12408426C14429008D42BB /* Networking & DataStore */ = {
@@ -1468,10 +1454,10 @@
 				5E4E404026C1675100175B57 /* AboutTheApp.swift in Sources */,
 				5E4E404B26C1675200175B57 /* StateVsObservedObject.swift in Sources */,
 				5EE7DBDF26D92748005FE862 /* Order.swift in Sources */,
+				5E10B73026DBB5DC00C6F93E /* Buttons.swift in Sources */,
 				5E1240C726C14429008D42BB /* VisualEffectBlur.swift in Sources */,
 				5E4E403D26C1675100175B57 /* SettingsView.swift in Sources */,
 				5EE7DBE626D931D7005FE862 /* FavoritedConsumable+CoreDataClass.swift in Sources */,
-				5E1240BD26C14429008D42BB /* RingView.swift in Sources */,
 				5E1240D926C14429008D42BB /* FirebaseService.swift in Sources */,
 				5E4E400B26C165E800175B57 /* AppDelegate.swift in Sources */,
 				5E12408B26C14429008D42BB /* moreListRow.swift in Sources */,
@@ -1481,6 +1467,7 @@
 				5E4E404626C1675100175B57 /* RestaurantListView.swift in Sources */,
 				5E4E405326C1675200175B57 /* OnBoarding.swift in Sources */,
 				5E4E404F26C1675200175B57 /* ScanRestaurantView.swift in Sources */,
+				5E10B73426DBB8B500C6F93E /* Text.swift in Sources */,
 				5E12409F26C14429008D42BB /* PartnerRequest.swift in Sources */,
 				5E1240D326C14429008D42BB /* TintOverlay.swift in Sources */,
 				5E4E405026C1675200175B57 /* Home.swift in Sources */,
@@ -1496,7 +1483,6 @@
 				5E123F8826C12DB0008D42BB /* ContentView.swift in Sources */,
 				5EE7DBE726D931D7005FE862 /* FavoritedConsumable+CoreDataProperties.swift in Sources */,
 				5E1240A126C14429008D42BB /* Restaurant.swift in Sources */,
-				5E1240B126C14429008D42BB /* String+Ext.swift in Sources */,
 				5E4E404326C1675100175B57 /* HyperLinkedRestaurantView.swift in Sources */,
 				5E4E400026C14EEB00175B57 /* ConsumableForSelectionDetail.swift in Sources */,
 				5E4E404726C1675200175B57 /* Welcome.swift in Sources */,
@@ -1507,7 +1493,7 @@
 				5E4E404226C1675100175B57 /* Appearance.swift in Sources */,
 				5E4E404926C1675200175B57 /* HowItWorks.swift in Sources */,
 				5E4E405426C1675200175B57 /* RequestMenuOnBoarding.swift in Sources */,
-				5E1240A326C14429008D42BB /* UIView+Extension.swift in Sources */,
+				5E1240A326C14429008D42BB /* UIView+extension.swift in Sources */,
 				5E1240A526C14429008D42BB /* String+extension.swift in Sources */,
 				5E4E404126C1675100175B57 /* autoAppearanceSwitch.swift in Sources */,
 				5EE7DBCB26D92185005FE862 /* BookingsView.swift in Sources */,
@@ -1519,11 +1505,9 @@
 				5E1240B326C14429008D42BB /* View+ext.swift in Sources */,
 				5E4E403F26C1675100175B57 /* LanguageView.swift in Sources */,
 				5E4E3FFA26C14E8B00175B57 /* MainViewForConsumables.swift in Sources */,
-				5E1240AF26C14429008D42BB /* UIApplication+ext.swift in Sources */,
-				5E1240B926C14429008D42BB /* Styles.swift in Sources */,
-				5E1240AD26C14429008D42BB /* Device.swift in Sources */,
+				5E1240AF26C14429008D42BB /* UIApplication+extension.swift in Sources */,
+				5E1240AD26C14429008D42BB /* UIDevice+extension.swift in Sources */,
 				5EE7DBCD26D92185005FE862 /* TabViewForRestaurant.swift in Sources */,
-				5E1240BB26C14429008D42BB /* CustomModifiers.swift in Sources */,
 				5E4E404E26C1675200175B57 /* PostList.swift in Sources */,
 				5E1240D726C14429008D42BB /* DataStore.swift in Sources */,
 				5E4E3FF726C14DF100175B57 /* ChooseLanguageView.swift in Sources */,
@@ -1537,6 +1521,7 @@
 				5E4E404826C1675200175B57 /* Features.swift in Sources */,
 				5E4E404A26C1675200175B57 /* LandingPage.swift in Sources */,
 				5E1240C526C14429008D42BB /* ReadMe.swift in Sources */,
+				5E10B73226DBB86F00C6F93E /* Views.swift in Sources */,
 				5E4E405126C1675200175B57 /* More.swift in Sources */,
 				5E4E404526C1675100175B57 /* selectedRestaurant.swift in Sources */,
 				5EA1EAF926C2AFEF000C7C2E /* ChangeColorThemeSegment.swift in Sources */,
@@ -1556,7 +1541,6 @@
 			files = (
 				5EB11C6326C2967000F85734 /* PrivacyPolicy.swift in Sources */,
 				5EB11C9326C2967000F85734 /* SubscriptionView.swift in Sources */,
-				5E1240F226C14692008D42BB /* Styles.swift in Sources */,
 				5EB11C9526C2967000F85734 /* MealRow.swift in Sources */,
 				5E1240E326C14471008D42BB /* HapticService.swift in Sources */,
 				5EB11C7F26C2967000F85734 /* ConsumableCategoriesListView.swift in Sources */,
@@ -1569,18 +1553,19 @@
 				5E123FA326C12DBE008D42BB /* ContentView.swift in Sources */,
 				5EB11CAD26C2967000F85734 /* SignInWithAppleToFirebase.swift in Sources */,
 				5EB11CAF26C2967000F85734 /* facebookLoginButton.swift in Sources */,
+				5E10B73C26DBB96700C6F93E /* Text.swift in Sources */,
 				5EB11C9D26C2967000F85734 /* MealCategorieIcon.swift in Sources */,
 				5EB11C9B26C2967000F85734 /* stockTabBar.swift in Sources */,
 				5E1240E726C14503008D42BB /* ConsumableCategorie.swift in Sources */,
 				5E1240F826C146F5008D42BB /* ActivityIndicator.swift in Sources */,
 				5EB11C7126C2967000F85734 /* HomePage.swift in Sources */,
 				5EB11CA326C2967000F85734 /* CreateUserView.swift in Sources */,
+				5E10B73926DBB95200C6F93E /* Views.swift in Sources */,
 				5EB11C6726C2967000F85734 /* LanguageView.swift in Sources */,
 				5EB11C8F26C2967000F85734 /* RequestView.swift in Sources */,
 				5E1240EB26C1457F008D42BB /* moreListRow.swift in Sources */,
 				5EB11C8D26C2967000F85734 /* CreateConsumableView.swift in Sources */,
 				5EB11C6926C2967000F85734 /* AboutTheApp.swift in Sources */,
-				5E1240F026C14622008D42BB /* HidekeyBoard.swift in Sources */,
 				5EB11C5B26C2967000F85734 /* AppDelegate.swift in Sources */,
 				5E1240EA26C14517008D42BB /* PartnerRequest.swift in Sources */,
 				5EB11CB326C2967000F85734 /* LocalNotificationService.swift in Sources */,
@@ -1600,7 +1585,6 @@
 				5EB11CB726C2967000F85734 /* AdminDataStore.swift in Sources */,
 				5EB11C7926C2967000F85734 /* QrCodeView.swift in Sources */,
 				5EB11C5D26C2967000F85734 /* AdminDataStore+CRUD.swift in Sources */,
-				5EB11CDB26C29F9100F85734 /* CustomModifiers.swift in Sources */,
 				5EB11C9926C2967000F85734 /* AddToMenuButtons.swift in Sources */,
 				5EB11C7726C2967000F85734 /* RestaurantView.swift in Sources */,
 				5EB11C9F26C2967000F85734 /* LoginView.swift in Sources */,
@@ -1616,10 +1600,11 @@
 				5EB11C7526C2967000F85734 /* CreateRestaurantView.swift in Sources */,
 				5EB11C6126C2967000F85734 /* ProfileView.swift in Sources */,
 				5EB11CD526C29F3100F85734 /* String+extension.swift in Sources */,
-				5EB11CDF26C2A0A100F85734 /* UIApplication+ext.swift in Sources */,
+				5EB11CDF26C2A0A100F85734 /* UIApplication+extension.swift in Sources */,
 				5EB11C9726C2967000F85734 /* MealCard.swift in Sources */,
 				5E4E3FE926C14BA700175B57 /* consumableType.swift in Sources */,
 				5EB11CA926C2967000F85734 /* Keychain.swift in Sources */,
+				5E10B73626DBB93E00C6F93E /* Buttons.swift in Sources */,
 				5EB11C8B26C2967000F85734 /* ConsumableMenuOverview.swift in Sources */,
 				5EB11CC126C2967000F85734 /* SuccesCases.swift in Sources */,
 				5EB11C7326C2967000F85734 /* selectedRestaurant.swift in Sources */,
@@ -1637,7 +1622,6 @@
 			files = (
 				5EB11C6426C2967000F85734 /* PrivacyPolicy.swift in Sources */,
 				5EB11C9426C2967000F85734 /* SubscriptionView.swift in Sources */,
-				5E1240F126C14691008D42BB /* Styles.swift in Sources */,
 				5EB11C9626C2967000F85734 /* MealRow.swift in Sources */,
 				5E1240E426C14472008D42BB /* HapticService.swift in Sources */,
 				5EB11C8026C2967000F85734 /* ConsumableCategoriesListView.swift in Sources */,
@@ -1650,18 +1634,19 @@
 				5E123FA426C12DBE008D42BB /* ContentView.swift in Sources */,
 				5EB11CAE26C2967000F85734 /* SignInWithAppleToFirebase.swift in Sources */,
 				5EB11CB026C2967000F85734 /* facebookLoginButton.swift in Sources */,
+				5E10B73D26DBB96700C6F93E /* Text.swift in Sources */,
 				5EB11C9E26C2967000F85734 /* MealCategorieIcon.swift in Sources */,
 				5EB11C9C26C2967000F85734 /* stockTabBar.swift in Sources */,
 				5E1240E826C14503008D42BB /* ConsumableCategorie.swift in Sources */,
 				5E1240F926C146F5008D42BB /* ActivityIndicator.swift in Sources */,
 				5EB11C7226C2967000F85734 /* HomePage.swift in Sources */,
 				5EB11CA426C2967000F85734 /* CreateUserView.swift in Sources */,
+				5E10B73A26DBB95300C6F93E /* Views.swift in Sources */,
 				5EB11C6826C2967000F85734 /* LanguageView.swift in Sources */,
 				5EB11C9026C2967000F85734 /* RequestView.swift in Sources */,
 				5E1240EC26C14580008D42BB /* moreListRow.swift in Sources */,
 				5EB11C8E26C2967000F85734 /* CreateConsumableView.swift in Sources */,
 				5EB11C6A26C2967000F85734 /* AboutTheApp.swift in Sources */,
-				5E1240EF26C14622008D42BB /* HidekeyBoard.swift in Sources */,
 				5EB11C5C26C2967000F85734 /* AppDelegate.swift in Sources */,
 				5E1240E926C14517008D42BB /* PartnerRequest.swift in Sources */,
 				5EB11CB426C2967000F85734 /* LocalNotificationService.swift in Sources */,
@@ -1681,7 +1666,6 @@
 				5EB11CB826C2967000F85734 /* AdminDataStore.swift in Sources */,
 				5EB11C7A26C2967000F85734 /* QrCodeView.swift in Sources */,
 				5EB11C5E26C2967000F85734 /* AdminDataStore+CRUD.swift in Sources */,
-				5EB11CDC26C29F9200F85734 /* CustomModifiers.swift in Sources */,
 				5EB11C9A26C2967000F85734 /* AddToMenuButtons.swift in Sources */,
 				5EB11C7826C2967000F85734 /* RestaurantView.swift in Sources */,
 				5EB11CA026C2967000F85734 /* LoginView.swift in Sources */,
@@ -1697,10 +1681,11 @@
 				5EB11C7626C2967000F85734 /* CreateRestaurantView.swift in Sources */,
 				5EB11C6226C2967000F85734 /* ProfileView.swift in Sources */,
 				5EB11CD626C29F3200F85734 /* String+extension.swift in Sources */,
-				5EB11CE026C2A0A100F85734 /* UIApplication+ext.swift in Sources */,
+				5EB11CE026C2A0A100F85734 /* UIApplication+extension.swift in Sources */,
 				5EB11C9826C2967000F85734 /* MealCard.swift in Sources */,
 				5E4E3FEA26C14BA700175B57 /* consumableType.swift in Sources */,
 				5EB11CAA26C2967000F85734 /* Keychain.swift in Sources */,
+				5E10B73826DBB93F00C6F93E /* Buttons.swift in Sources */,
 				5EB11C8C26C2967000F85734 /* ConsumableMenuOverview.swift in Sources */,
 				5EB11CC226C2967000F85734 /* SuccesCases.swift in Sources */,
 				5EB11C7426C2967000F85734 /* selectedRestaurant.swift in Sources */,
@@ -1720,11 +1705,10 @@
 				5E12404F26C13AB4008D42BB /* URLRequestBuilder.swift in Sources */,
 				5E4E400126C14EEB00175B57 /* ConsumableForSelectionDetail.swift in Sources */,
 				5E1240D426C14429008D42BB /* TintOverlay.swift in Sources */,
-				5E1240BC26C14429008D42BB /* CustomModifiers.swift in Sources */,
 				5E123FB626C12DDB008D42BB /* ContentView.swift in Sources */,
 				5E123FB426C12DDB008D42BB /* OneMenuAppClipApp.swift in Sources */,
 				5E4B5C3E26C148F50082CADF /* RootForScannedRestaurant.swift in Sources */,
-				5E1240B026C14429008D42BB /* UIApplication+ext.swift in Sources */,
+				5E1240B026C14429008D42BB /* UIApplication+extension.swift in Sources */,
 				5E4E3FFB26C14E8B00175B57 /* MainViewForConsumables.swift in Sources */,
 				5E12404D26C13AB4008D42BB /* OneMenuFireStoreEndPoints.swift in Sources */,
 				5E12404926C13AB4008D42BB /* ParameterEncoding.swift in Sources */,
@@ -1734,9 +1718,8 @@
 				5E1240CA26C14429008D42BB /* ActivityIndicator.swift in Sources */,
 				5E12409E26C14429008D42BB /* ConsumableCategorie.swift in Sources */,
 				5E4E3FEB26C14BA700175B57 /* consumableType.swift in Sources */,
-				5E1240BE26C14429008D42BB /* RingView.swift in Sources */,
 				5E1240D626C14429008D42BB /* CoreError.swift in Sources */,
-				5E1240BA26C14429008D42BB /* Styles.swift in Sources */,
+				5E10B73B26DBB95300C6F93E /* Views.swift in Sources */,
 				5E12405326C13AB4008D42BB /* NetworkController.swift in Sources */,
 				5E12405126C13AB4008D42BB /* NetworkLogger.swift in Sources */,
 				5E4B5C3D26C148F50082CADF /* RootForAllRestaurants.swift in Sources */,
@@ -1746,7 +1729,9 @@
 				5E12409626C14429008D42BB /* ConsumableCategorieIcon.swift in Sources */,
 				5E1240A826C14429008D42BB /* Color+extension.swift in Sources */,
 				5E4E3FEC26C14BD900175B57 /* AppClipDataStore.swift in Sources */,
+				5E10B73E26DBB96800C6F93E /* Text.swift in Sources */,
 				5E1240C026C14429008D42BB /* ExplanationReUsableCompents.swift in Sources */,
+				5E10B73726DBB93F00C6F93E /* Buttons.swift in Sources */,
 				5E1240A626C14429008D42BB /* String+extension.swift in Sources */,
 				5E12409826C14429008D42BB /* RestaurantRow.swift in Sources */,
 				5E1240B426C14429008D42BB /* View+ext.swift in Sources */,
@@ -1761,7 +1746,6 @@
 				5E1240F726C146EC008D42BB /* LottieView.swift in Sources */,
 				5E12409C26C14429008D42BB /* Consumable.swift in Sources */,
 				5E12408E26C14429008D42BB /* SpecialConsumableCard.swift in Sources */,
-				5E1240B226C14429008D42BB /* String+Ext.swift in Sources */,
 				5E12409026C14429008D42BB /* ConsumableRow.swift in Sources */,
 				5E1240D026C14429008D42BB /* SearchBarUI.swift in Sources */,
 				5E4E3FF826C14DF100175B57 /* ChooseLanguageView.swift in Sources */,
