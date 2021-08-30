@@ -69,7 +69,7 @@ struct StrechyFirebaseStorageImageHeader : View{
         
         
         VStack(alignment:.center){
-            ZStack{
+            ZStack(alignment:.top){
                 GeometryReader { geometry in
                     if let image = image{
                         
@@ -87,7 +87,7 @@ struct StrechyFirebaseStorageImageHeader : View{
                             .resizable()
                             .background(Color("grouped"))
                             .scaledToFill()
-                            .overlay(TintOverlay().opacity(0.7))
+                            .overlay(TintOverlay().opacity(0.4))
                             .frame(width: geometry.size.width, height: self.getHeightForHeaderImage(geometry))
                             .cornerRadius(20, corners: [.bottomLeft,.bottomRight])
                             .clipped()

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E01CD5B26DCF5BA002EFA84 /* Binding+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5A26DCF5BA002EFA84 /* Binding+extension.swift */; };
+		5E01CD5C26DCF5BA002EFA84 /* Binding+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5A26DCF5BA002EFA84 /* Binding+extension.swift */; };
+		5E01CD5D26DCF5BA002EFA84 /* Binding+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5A26DCF5BA002EFA84 /* Binding+extension.swift */; };
+		5E01CD5E26DCF5BA002EFA84 /* Binding+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5A26DCF5BA002EFA84 /* Binding+extension.swift */; };
+		5E01CD6026DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */; };
+		5E01CD6126DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */; };
+		5E01CD6226DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */; };
+		5E01CD6326DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */; };
 		5E10B73026DBB5DC00C6F93E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B72F26DBB5DC00C6F93E /* Buttons.swift */; };
 		5E10B73226DBB86F00C6F93E /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73126DBB86F00C6F93E /* RingView.swift */; };
 		5E10B73426DBB8B500C6F93E /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73326DBB8B500C6F93E /* Text.swift */; };
@@ -351,7 +359,7 @@
 		5EE7DBCC26D92185005FE862 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBC626D92185005FE862 /* FavoritesView.swift */; };
 		5EE7DBCD26D92185005FE862 /* TabViewForRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBC726D92185005FE862 /* TabViewForRestaurant.swift */; };
 		5EE7DBD326D9218E005FE862 /* itemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBD026D9218E005FE862 /* itemRow.swift */; };
-		5EE7DBD426D9218E005FE862 /* CreateMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBD126D9218E005FE862 /* CreateMenuItemView.swift */; };
+		5EE7DBD426D9218E005FE862 /* SelectedMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBD126D9218E005FE862 /* SelectedMenuItemView.swift */; };
 		5EE7DBD526D9218E005FE862 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBD226D9218E005FE862 /* BasketView.swift */; };
 		5EE7DBDA26D9219E005FE862 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBD726D9219E005FE862 /* Persistence.swift */; };
 		5EE7DBDB26D9219E005FE862 /* OneMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7DBD826D9219E005FE862 /* OneMenu.xcdatamodeld */; };
@@ -386,6 +394,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E01CD5A26DCF5BA002EFA84 /* Binding+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+extension.swift"; sourceTree = "<group>"; };
+		5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechySDWebImageHeader.swift; sourceTree = "<group>"; };
 		5E10B72F26DBB5DC00C6F93E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		5E10B73126DBB86F00C6F93E /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		5E10B73326DBB8B500C6F93E /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
@@ -561,7 +571,7 @@
 		5EE7DBC626D92185005FE862 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		5EE7DBC726D92185005FE862 /* TabViewForRestaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewForRestaurant.swift; sourceTree = "<group>"; };
 		5EE7DBD026D9218E005FE862 /* itemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemRow.swift; sourceTree = "<group>"; };
-		5EE7DBD126D9218E005FE862 /* CreateMenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMenuItemView.swift; sourceTree = "<group>"; };
+		5EE7DBD126D9218E005FE862 /* SelectedMenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedMenuItemView.swift; sourceTree = "<group>"; };
 		5EE7DBD226D9218E005FE862 /* BasketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
 		5EE7DBD726D9219E005FE862 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5EE7DBD926D9219E005FE862 /* OneMenu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneMenu.xcdatamodel; sourceTree = "<group>"; };
@@ -662,6 +672,7 @@
 				5E10B74426DBC2B300C6F93E /* MailView.swift */,
 				5E10B74626DBC2EB00C6F93E /* BlurView.swift */,
 				5EDA2A6026DCCDDE00618135 /* StrechyFirebaseStorageImageHeader.swift */,
+				5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -892,6 +903,7 @@
 				5E12406926C14429008D42BB /* Color+extension.swift */,
 				5E12407026C14429008D42BB /* View+ext.swift */,
 				5E12406A26C14429008D42BB /* CGRect+extension.swift */,
+				5E01CD5A26DCF5BA002EFA84 /* Binding+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1203,7 +1215,7 @@
 			children = (
 				5EE7DBCF26D9218E005FE862 /* ImageCardForConsumable */,
 				5EE7DBD026D9218E005FE862 /* itemRow.swift */,
-				5EE7DBD126D9218E005FE862 /* CreateMenuItemView.swift */,
+				5EE7DBD126D9218E005FE862 /* SelectedMenuItemView.swift */,
 				5EE7DBD226D9218E005FE862 /* BasketView.swift */,
 			);
 			path = OrderView;
@@ -1485,7 +1497,7 @@
 				5E1240CD26C14429008D42BB /* QrCodeScannerView.swift in Sources */,
 				5E12409B26C14429008D42BB /* Consumable.swift in Sources */,
 				5E1240D126C14429008D42BB /* LottieView.swift in Sources */,
-				5EE7DBD426D9218E005FE862 /* CreateMenuItemView.swift in Sources */,
+				5EE7DBD426D9218E005FE862 /* SelectedMenuItemView.swift in Sources */,
 				5E1240BF26C14429008D42BB /* ExplanationReUsableCompents.swift in Sources */,
 				5E10B74126DBC25C00C6F93E /* Overlays.swift in Sources */,
 				5EE7DBDB26D9219E005FE862 /* OneMenu.xcdatamodeld in Sources */,
@@ -1497,6 +1509,7 @@
 				5E4E404726C1675200175B57 /* Welcome.swift in Sources */,
 				5EDA2A6126DCCDDE00618135 /* StrechyFirebaseStorageImageHeader.swift in Sources */,
 				5E12408D26C14429008D42BB /* SpecialConsumableCard.swift in Sources */,
+				5E01CD5B26DCF5BA002EFA84 /* Binding+extension.swift in Sources */,
 				5E123F8626C12DB0008D42BB /* One_MenuApp.swift in Sources */,
 				5E4E3FF226C14DC800175B57 /* SettingsOption.swift in Sources */,
 				5E4E404226C1675100175B57 /* Appearance.swift in Sources */,
@@ -1536,6 +1549,7 @@
 				5E10B73226DBB86F00C6F93E /* RingView.swift in Sources */,
 				5E4E405126C1675200175B57 /* More.swift in Sources */,
 				5E4E404526C1675100175B57 /* selectedRestaurant.swift in Sources */,
+				5E01CD6026DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */,
 				5EA1EAF926C2AFEF000C7C2E /* ChangeColorThemeSegment.swift in Sources */,
 				5E12408F26C14429008D42BB /* ConsumableRow.swift in Sources */,
 				5E123FCC26C12F56008D42BB /* StripePaymentModel.swift in Sources */,
@@ -1565,6 +1579,7 @@
 				5EB11CAD26C2967000F85734 /* SignInWithAppleToFirebase.swift in Sources */,
 				5EB11CAF26C2967000F85734 /* facebookLoginButton.swift in Sources */,
 				5E10B73C26DBB96700C6F93E /* Text.swift in Sources */,
+				5E01CD6126DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */,
 				5EB11C9D26C2967000F85734 /* MealCategorieIcon.swift in Sources */,
 				5EB11C9B26C2967000F85734 /* stockTabBar.swift in Sources */,
 				5E1240E726C14503008D42BB /* ConsumableCategorie.swift in Sources */,
@@ -1587,6 +1602,7 @@
 				5EB11C8126C2967000F85734 /* CreateConsumableCategorieView.swift in Sources */,
 				5EB11C7B26C2967000F85734 /* ChooseLanguageView.swift in Sources */,
 				5E10B75626DBC3F600C6F93E /* TextFields.swift in Sources */,
+				5E01CD5C26DCF5BA002EFA84 /* Binding+extension.swift in Sources */,
 				5EB11CD926C29F6400F85734 /* VisualEffectBlur.swift in Sources */,
 				5EB11C6B26C2967000F85734 /* autoAppearanceSwitch.swift in Sources */,
 				5E1240ED26C145BB008D42BB /* RestaurantRow.swift in Sources */,
@@ -1701,8 +1717,10 @@
 				5EB11CD626C29F3200F85734 /* String+extension.swift in Sources */,
 				5EB11CE026C2A0A100F85734 /* UIApplication+extension.swift in Sources */,
 				5EB11C9826C2967000F85734 /* MealCard.swift in Sources */,
+				5E01CD6226DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */,
 				5E4E3FEA26C14BA700175B57 /* consumableType.swift in Sources */,
 				5EB11CAA26C2967000F85734 /* Keychain.swift in Sources */,
+				5E01CD5D26DCF5BA002EFA84 /* Binding+extension.swift in Sources */,
 				5E10B73826DBB93F00C6F93E /* Buttons.swift in Sources */,
 				5EB11C8C26C2967000F85734 /* ConsumableMenuOverview.swift in Sources */,
 				5EB11CC226C2967000F85734 /* SuccesCases.swift in Sources */,
@@ -1743,6 +1761,7 @@
 				5E4B5C3D26C148F50082CADF /* RootForAllRestaurants.swift in Sources */,
 				5E12405226C13AB4008D42BB /* EndPointType.swift in Sources */,
 				5E10B74D26DBC39800C6F93E /* BlurView.swift in Sources */,
+				5E01CD5E26DCF5BA002EFA84 /* Binding+extension.swift in Sources */,
 				5E1240C626C14429008D42BB /* ReadMe.swift in Sources */,
 				5E12404A26C13AB4008D42BB /* URLParameterEncoding.swift in Sources */,
 				5E12409626C14429008D42BB /* ConsumableCategorieIcon.swift in Sources */,
@@ -1766,6 +1785,7 @@
 				5E12408E26C14429008D42BB /* SpecialConsumableCard.swift in Sources */,
 				5E12409026C14429008D42BB /* ConsumableRow.swift in Sources */,
 				5E4E3FF826C14DF100175B57 /* ChooseLanguageView.swift in Sources */,
+				5E01CD6326DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */,
 				5E4E3FFE26C14EC500175B57 /* ConsumablesForSelectedCategorie.swift in Sources */,
 				5E1240C226C14429008D42BB /* LibraryContent.swift in Sources */,
 			);

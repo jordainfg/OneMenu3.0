@@ -224,14 +224,16 @@ struct roundedButtonStyle: ButtonStyle {
     }
 }
 
-struct CloseButton: View {
+struct CircularButton: View {
     
+    var systemName: String
     var customAction: () -> ()
+    
     var body: some View {
         Button(action: {
             customAction()
         }, label: {
-        Image(systemName: "xmark")
+        Image(systemName: systemName)
             .font(.system(size: 17, weight: .bold))
             .foregroundColor(.white)
             .padding(.all, 10)

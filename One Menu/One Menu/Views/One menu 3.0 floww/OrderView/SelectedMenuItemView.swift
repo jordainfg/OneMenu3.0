@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
-
-struct CreateMenuItemView: View {
+struct SelectedMenuItemView: View {
     
     @State var menuItem : menuItem
     
@@ -18,18 +18,20 @@ struct CreateMenuItemView: View {
     
     @State var showCustomizations = false
     
-    @Binding var menuItems : [menuItem]
-    
-    @State var newMenuItems : [menuItem] = []
     
     @Environment(\.presentationMode) var presentationMode
+    
     @ObservedObject var store : DataStore
+    
+    @State var image : WebImage?
+    
     var body: some View {
         
         ScrollView {
             ScrollViewReader { value in
                 
-                StrechyImageHeader()
+                StrechySDWebImageHeader(image: image)
+                
                 VStack(alignment:.leading, spacing: 25){
                     
                     VStack(alignment:.leading, spacing: 15) {
@@ -183,16 +185,13 @@ struct CreateMenuItemView: View {
         .overlay(
             BottomBarButton( name: "Add to basket", systemName: "bag", aditionalText: "(\(String(format: "%.2f", menuItem.price)))"){
                 store.cartItems.append(menuItem)
-        }
-           
+            }
             , alignment: .bottom
-      )
+            )
     }
     
     
 }
-
-
 
 
 struct EditMenuItemView: View {
@@ -380,9 +379,6 @@ struct EditMenuItemView: View {
 
 
 
-
-
-
 struct IndexedCollection<Base: RandomAccessCollection>: RandomAccessCollection {
     typealias Index = Base.Index
     typealias Element = (index: Index, element: Base.Element)
@@ -416,17 +412,7 @@ extension RandomAccessCollection {
     }
 }
 
-extension Binding {
-    func didSet(execute: @escaping (Value) -> Void) -> Binding {
-        return Binding(
-            get: { self.wrappedValue },
-            set: {
-                self.wrappedValue = $0
-                execute($0)
-            }
-        )
-    }
-}
+
 struct StrechyImageHeader : View{
     
     let screen = UIScreen.main.bounds

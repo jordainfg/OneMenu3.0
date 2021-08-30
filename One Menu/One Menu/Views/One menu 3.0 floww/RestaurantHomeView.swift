@@ -91,7 +91,14 @@ struct RestaurantHomeView: View {
             .background(Color("whiteToDarkGrouped"))
             .cornerRadius(20)
             .offset(y: -40)
-        })
+            })
+            .overlay(
+                CircularButton(systemName: "arrow.triangle.2.circlepath"){
+                    presentationMode.wrappedValue.dismiss()
+                }
+                    .offset(x: 20, y: 10)
+                
+                , alignment: .topLeading)
             .onAppear{
                 store.selectedRestaurant = restaurant
             }

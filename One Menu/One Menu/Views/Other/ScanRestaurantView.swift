@@ -92,7 +92,7 @@ struct ScanRestaurantView: View {
                 
                     
                 Spacer()
-                CloseButton(){ self.showingAlert = true}
+                CircularButton(systemName:"xmark"){ self.showingAlert = true}
                     .alert(isPresented: $showingAlert) {
                         Alert(title: Text(LocalizedStringKey("scanAlertOneTitle")), message: Text(LocalizedStringKey("scanAlertOneSubTitle")), primaryButton: .destructive(Text("Yes")) {
                                 ScannedRestaurant = ""

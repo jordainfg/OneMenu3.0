@@ -33,7 +33,7 @@ struct OneMenuBusiness: View {
                 }.padding()
                 
             }
-            .navigationBarItems(trailing: CloseButton(){
+            .navigationBarItems(trailing: CircularButton(systemName:"xmark"){
                 presentationMode.wrappedValue.dismiss()
             })
         }

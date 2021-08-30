@@ -25,6 +25,7 @@ struct RestaurantListView: View {
     @State var showScannerView = false
     @State var showScannedRestaurant = false
     @State var scannedRestaurant : Restaurant?
+    @State var selectedRestaurant : Restaurant?
     @State var  viewState : viewState = .isLoading
     
     @AppStorage("ScannedRestaurant") var ScannedRestaurant : String = ""
@@ -100,14 +101,21 @@ struct RestaurantListView: View {
             VStack{
                 List{
                     Section {
-                        ForEach(store.Restaurants.filter { $0.name.lowercased().hasSubstring(searchText.lowercased()) || searchText.isEmpty }) { item in
-                            NavigationLink(destination: TabViewForRestaurant(selectedRestaurant: item, store: store)) {
-                                if store.Restaurants.count==1{
-                                    RestaurantRow(item: item)
-                                } else{
-                                    RestaurantRow(item: item)
+                        ForEach(store.Restaurants.filter { $0.name.lowercased().hasSubstring(searchText.lowercased()) || searchText.isEmpty }) { restaurant in
+                            RestaurantRow(restaurant: restaurant)
+                                .onTapGesture {
+                                    selectedRestaurant = restaurant
                                 }
-                            }
+                                .fullScreenCover(item: $selectedRestaurant){ restaurant in
+                                    TabViewForRestaurant(selectedRestaurant: restaurant, store: store)
+                                }
+//                            NavigationLink(destination: TabViewForRestaurant(selectedRestaurant: item, store: store)) {
+//                                if store.Restaurants.count==1{
+//                                    RestaurantRow(item: item)
+//                                } else{
+//                                    RestaurantRow(item: item)
+//                                }
+//                            }
                             
                         }
                         
@@ -120,7 +128,7 @@ struct RestaurantListView: View {
                 .sheet(isPresented: $showLandingPageModal){
                     LandingPage(showLandingPageModal: $showLandingPageModal)
                 }
-                NavigationLink(destination: selectedRestaurant(store: store, selectedRestaurant: scannedRestaurant), isActive: $showScannedRestaurant) {
+                NavigationLink(destination: TabViewForRestaurant(selectedRestaurant: scannedRestaurant, store: store), isActive: $showScannedRestaurant) {
                 }
             }
             

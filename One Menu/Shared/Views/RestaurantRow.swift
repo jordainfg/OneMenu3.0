@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RestaurantRow: View {
-    var item: Restaurant?
+    var restaurant: Restaurant?
  
     var body: some View {
        VStack(alignment: .leading, spacing:4) {
@@ -23,7 +23,7 @@ struct RestaurantRow: View {
                     .padding(.trailing,10)
                     .foregroundColor(Color.primaryOne)
                     
-                if let restaurant = item {
+                if let restaurant = restaurant {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(restaurant.name)
                         .font(.subheadline)

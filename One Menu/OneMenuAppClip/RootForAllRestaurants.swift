@@ -97,7 +97,7 @@ struct RootForAllRestaurants: View {
         NavigationView {
             FilteringList(restaurants, filterKeys: \.name, \.address) { restaurant in
                 NavigationLink(destination: RootForScannedRestaurant(store: store, selectedRestaurant: restaurant).environmentObject(appClipState), label: {
-                    RestaurantRow(item: restaurant)
+                    RestaurantRow(restaurant: restaurant)
                 })
                 
             }
@@ -187,16 +187,6 @@ extension View {
         self.transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.6)))
     }
 }
-extension Binding {
-    func onChange(_ handler: @escaping () -> Void) -> Binding<Value> {
-        Binding(
-            get: { self.wrappedValue },
-            set: { newValue in
-                self.wrappedValue = newValue
-                handler()
-            }
-        )
-    }
-}
+
 
 

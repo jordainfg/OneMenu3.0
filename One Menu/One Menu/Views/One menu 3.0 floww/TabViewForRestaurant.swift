@@ -25,7 +25,7 @@ struct TabViewForRestaurant: View {
     
     @State var imagess : [String : WebImage] = [String: WebImage]()
     
-    @State  var didTryAgain = false // used to retry fetching data 
+    @State  var didTryAgain = false // used to retry fetching data
     
     // MARK: - Functions
     func getConsumableCategories(completionHandler: @escaping (Result<Response, CoreError>) -> Void){
