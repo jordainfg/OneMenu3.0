@@ -22,64 +22,23 @@ struct BrowseMenuView: View {
                                  categorys: store.consumableCategories,
                                  filterKeysForConsumable: \.title,
                                  filterKeysForCategorie: \.title,
-                                 
                                  consumablerowContent: { consumable in
-                
-    //            Button(action: {
-    //                let newFavorite = FavoritedConsumable(context: viewContext)
-    //                newFavorite.consumableID = consumable.consumableID
-    //                newFavorite.restaurantID = store.selectedRestaurant?.restaurantID ?? "e"
-    //                newFavorite.isMeal = consumable.isMeal
-    //                newFavorite.id = UUID()
-    //                do {
-    //                        try viewContext.save()
-    //                        print("Consumable saved to favorites")
-    //
-    //
-    //                    } catch {
-    //                        print(error.localizedDescription)
-    //                    }
-    //
-    //
-    //            }, label: {
-    ////                VStack(alignment: .leading) {
-    ////                Text(consumable.title)
-    ////                    .font(.headline)
-    ////                Text(consumable.subtitle)
-    ////                    .foregroundColor(.secondary)
-    ////                }
-    //                ConsumableRow(item: consumable, image : imagess[consumable.consumableID])
-    //
-    //            })
-    //
-                NavigationLink(destination: SelectedMenuItemView(menuItem: menuItem(consumable: consumable), consumable: consumable, store: store, image: store.imagess[consumable.consumableID]), label: {
-                    ConsumableRow(item: consumable, image : store.imagess[consumable.consumableID])
-                })
-                
-            },
-                                 
+                                    NavigationLink(destination: SelectedMenuItemView(menuItem: menuItem(consumable: consumable), consumable: consumable, store: store, image: store.imagess[consumable.consumableID]), label: {
+                                        ConsumableRow(item: consumable, image : store.imagess[consumable.consumableID])
+                                    })
+                                 },
                                  categoryrowContent : { category in
-                VStack(alignment: .leading) {
-                    Text(category.title)
-                        .font(.headline)
-                    Text(category.subtitle)
-                        .foregroundColor(.secondary)
-                }
-            }
-            )
-                
+                                    VStack(alignment: .leading) {
+                                        Text(category.title)
+                                            .font(.headline)
+                                        Text(category.subtitle)
+                                            .foregroundColor(.secondary)
+                                    }}
+                                )
                 .navigationBarTitle("Browse", displayMode: .inline)
                 .navigationBarItems(leading: BarItemButton(systemName: "arrow.triangle.2.circlepath"){
                     presentationMode.wrappedValue.dismiss()
                 })
-                .toolbar {
-                            ToolbarItem(placement: .principal) {
-                                HStack {
-                                    Image(systemName: "bag")
-                                    Text("Basket").font(.headline)
-                                }
-                            }
-            }
         }
         
     }
@@ -97,9 +56,6 @@ enum viewsForScrollSegmentedControl : LocalizedStringKey {
     case meals = "Meals"
     case beverages = "Beverages"
     case categories = "Categories"
-    
-    
-    
 }
 
 struct ConsumableBrowseList<consumableContent:View, categoryContent:View> : View{
@@ -219,6 +175,7 @@ struct ConsumableBrowseList<consumableContent:View, categoryContent:View> : View
         }
     }
 }
+
 struct CustomSearchBar: View {
     @Binding var text: String
     
@@ -260,3 +217,31 @@ struct CustomSearchBar: View {
     }
 }
 
+
+//            Button(action: {
+//                let newFavorite = FavoritedConsumable(context: viewContext)
+//                newFavorite.consumableID = consumable.consumableID
+//                newFavorite.restaurantID = store.selectedRestaurant?.restaurantID ?? "e"
+//                newFavorite.isMeal = consumable.isMeal
+//                newFavorite.id = UUID()
+//                do {
+//                        try viewContext.save()
+//                        print("Consumable saved to favorites")
+//
+//
+//                    } catch {
+//                        print(error.localizedDescription)
+//                    }
+//
+//
+//            }, label: {
+////                VStack(alignment: .leading) {
+////                Text(consumable.title)
+////                    .font(.headline)
+////                Text(consumable.subtitle)
+////                    .foregroundColor(.secondary)
+////                }
+//                ConsumableRow(item: consumable, image : imagess[consumable.consumableID])
+//
+//            })
+//

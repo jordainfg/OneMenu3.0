@@ -40,12 +40,11 @@ struct StrechyFirebaseStorageImageHeader : View{
         if offset > 0 {
             return imageHeight + offset
         }
-        
+
         return imageHeight
     }
     
     func retrieveImageFromFirebaseStorage(){
-        
         if !firestoreLocationUrlString.hasPrefix("gs://") {
             firestoreLocationUrlString = "gs://one-menu-40f52.appspot.com/Assets/placeHolderForOneMenuDark@3x.png"
         }
@@ -65,25 +64,14 @@ struct StrechyFirebaseStorageImageHeader : View{
             
         }
     }
+    
     var body : some View{
-        
-        
         VStack(alignment:.center){
             ZStack(alignment:.top){
                 GeometryReader { geometry in
                     if let image = image{
-                        
                         image
-                            .placeholder {
-                                Image(systemName: "photo")
-                                    .resizable()
-                                    .renderingMode(.template)
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(.primary)
-                                
-                                
-                            }
+                            .placeholder {PlaceholderImage() }
                             .resizable()
                             .background(Color("grouped"))
                             .scaledToFill()
@@ -92,24 +80,17 @@ struct StrechyFirebaseStorageImageHeader : View{
                             .cornerRadius(20, corners: [.bottomLeft,.bottomRight])
                             .clipped()
                             .offset(x: 0, y: self.getOffsetForHeaderImage(geometry))
-                            
-                        
                     }
-                    
                 }
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 .frame(height:screen.height/4 , alignment: .topLeading)
                 .shadow(color: Color.primary.opacity(0.2), radius: 20, x: 0, y: 10)
                 
             }
-            
-            
         }
         .edgesIgnoringSafeArea(.top)
         .onLoad(perform: {retrieveImageFromFirebaseStorage()})
-        
     }
-    
 }
 
 struct StrechyFirebaseStorageImageHeader_Previews: PreviewProvider {
@@ -117,30 +98,20 @@ struct StrechyFirebaseStorageImageHeader_Previews: PreviewProvider {
         StrechyFirebaseStorageImageHeader(firestoreLocationUrlString: "gs://one-menu-40f52.appspot.com/Assets/placeHolderForOneMenuDark@3x.png", store: DataStore())
     }
 }
-struct ViewDidLoadModifier: ViewModifier {
 
-    @State private var didLoad = false
-    private let action: (() -> Void)?
 
-    init(perform action: (() -> Void)? = nil) {
-        self.action = action
-    }
 
-    func body(content: Content) -> some View {
-        content.onAppear {
-            if didLoad == false {
-                didLoad = true
-                action?()
-            }
+struct PlaceholderImage: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "photo")
+                .resizable()
+                .renderingMode(.template)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 60, height: 60)
+                .foregroundColor(Color.white)
         }
+        .frame(maxWidth:.infinity, maxHeight: .infinity)
+        .background(Color("grouped"))
     }
-
-}
-
-extension View {
-
-    func onLoad(perform action: (() -> Void)? = nil) -> some View {
-        modifier(ViewDidLoadModifier(perform: action))
-    }
-
 }

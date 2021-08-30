@@ -19,6 +19,9 @@
 		5E01CD6626DD085D002EFA84 /* Optional+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD6426DD085D002EFA84 /* Optional+extension.swift */; };
 		5E01CD6726DD085D002EFA84 /* Optional+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD6426DD085D002EFA84 /* Optional+extension.swift */; };
 		5E01CD6826DD085D002EFA84 /* Optional+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD6426DD085D002EFA84 /* Optional+extension.swift */; };
+		5E01CD6926DD0D94002EFA84 /* StrechyFirebaseStorageImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA2A6026DCCDDE00618135 /* StrechyFirebaseStorageImageHeader.swift */; };
+		5E01CD6A26DD0D95002EFA84 /* StrechyFirebaseStorageImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA2A6026DCCDDE00618135 /* StrechyFirebaseStorageImageHeader.swift */; };
+		5E01CD6B26DD0D96002EFA84 /* StrechyFirebaseStorageImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA2A6026DCCDDE00618135 /* StrechyFirebaseStorageImageHeader.swift */; };
 		5E10B73026DBB5DC00C6F93E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B72F26DBB5DC00C6F93E /* Buttons.swift */; };
 		5E10B73226DBB86F00C6F93E /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73126DBB86F00C6F93E /* RingView.swift */; };
 		5E10B73426DBB8B500C6F93E /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73326DBB8B500C6F93E /* Text.swift */; };
@@ -1606,6 +1609,7 @@
 				5EB11CC526C2967000F85734 /* Restaurant.swift in Sources */,
 				5E123FA126C12DBE008D42BB /* One_Menu_BusinessApp.swift in Sources */,
 				5E10B75426DBC3F100C6F93E /* Enums.swift in Sources */,
+				5E01CD6926DD0D94002EFA84 /* StrechyFirebaseStorageImageHeader.swift in Sources */,
 				5EB11C8126C2967000F85734 /* CreateConsumableCategorieView.swift in Sources */,
 				5EB11C7B26C2967000F85734 /* ChooseLanguageView.swift in Sources */,
 				5E10B75626DBC3F600C6F93E /* TextFields.swift in Sources */,
@@ -1704,6 +1708,7 @@
 				5EB11CA226C2967000F85734 /* ResetPasswordView.swift in Sources */,
 				5EB11C9226C2967000F85734 /* NotificationsView.swift in Sources */,
 				5EB11CB226C2967000F85734 /* SubscriptionManager.swift in Sources */,
+				5E01CD6A26DD0D95002EFA84 /* StrechyFirebaseStorageImageHeader.swift in Sources */,
 				5EB11CB826C2967000F85734 /* AdminDataStore.swift in Sources */,
 				5EB11C7A26C2967000F85734 /* QrCodeView.swift in Sources */,
 				5EB11C5E26C2967000F85734 /* AdminDataStore+CRUD.swift in Sources */,
@@ -1797,6 +1802,7 @@
 				5E01CD6326DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */,
 				5E4E3FFE26C14EC500175B57 /* ConsumablesForSelectedCategorie.swift in Sources */,
 				5E01CD6826DD085D002EFA84 /* Optional+extension.swift in Sources */,
+				5E01CD6B26DD0D96002EFA84 /* StrechyFirebaseStorageImageHeader.swift in Sources */,
 				5E1240C226C14429008D42BB /* LibraryContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

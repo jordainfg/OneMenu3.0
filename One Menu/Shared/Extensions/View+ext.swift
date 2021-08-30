@@ -29,7 +29,9 @@ extension View {
              .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
              .shadow(color: Color.blue.opacity(0.3), radius: 20, x: 0, y: 10)
      }
-  
+    func onLoad(perform action: (() -> Void)? = nil) -> some View {
+        modifier(ViewDidLoadModifier(perform: action))
+    }
      
 }
 struct RoundedCorner: Shape {
@@ -41,4 +43,23 @@ struct RoundedCorner: Shape {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         return Path(path.cgPath)
     }
+}
+struct ViewDidLoadModifier: ViewModifier {
+
+    @State private var didLoad = false
+    private let action: (() -> Void)?
+
+    init(perform action: (() -> Void)? = nil) {
+        self.action = action
+    }
+
+    func body(content: Content) -> some View {
+        content.onAppear {
+            if didLoad == false {
+                didLoad = true
+                action?()
+            }
+        }
+    }
+
 }

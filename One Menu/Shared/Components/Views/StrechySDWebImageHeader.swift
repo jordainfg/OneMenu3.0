@@ -19,16 +19,7 @@ struct StrechySDWebImageHeader : View{
                     if let image = image{
                         
                         image
-                            .placeholder {
-                                Image(systemName: "photo")
-                                    .resizable()
-                                    .renderingMode(.template)
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(.primary)
-                                
-                                
-                            }
+                            .placeholder {PlaceholderImage() }
                             .resizable()
                             .background(Color("grouped"))
                             .scaledToFill()
@@ -37,22 +28,15 @@ struct StrechySDWebImageHeader : View{
                             .cornerRadius(20, corners: [.bottomLeft,.bottomRight])
                             .clipped()
                             .offset(x: 0, y: self.getOffsetForHeaderImage(geometry))
-                            
-                        
                     }
-                    
                 }
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                .frame(height:screen.height/3.5 , alignment: .topLeading)
+                .frame(height:screen.height/4.5 , alignment: .topLeading)
                 .shadow(color: Color.primary.opacity(0.2), radius: 20, x: 0, y: 10)
                 
             }
-            
-            
         }
-        
         .edgesIgnoringSafeArea(.top)
-        
     }
     
     private func getScrollOffset(_ geometry: GeometryProxy) -> CGFloat {
