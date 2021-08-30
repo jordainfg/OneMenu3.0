@@ -214,7 +214,7 @@ struct EditMenuItemView: View {
         ScrollView {
             ScrollViewReader { value in
                 
-                StrechyImageHeader()
+                //StrechyImageHeader()
                 VStack(alignment:.leading, spacing: 25){
                     
                     VStack(alignment:.leading, spacing: 15) {
@@ -411,74 +411,6 @@ extension RandomAccessCollection {
         IndexedCollection(base: self)
     }
 }
-
-
-struct StrechyImageHeader : View{
-    
-    let screen = UIScreen.main.bounds
-    
-    private func getScrollOffset(_ geometry: GeometryProxy) -> CGFloat {
-        geometry.frame(in: .global).minY
-    }
-    
-    // 2
-    private func getOffsetForHeaderImage(_ geometry: GeometryProxy) -> CGFloat {
-        let offset = getScrollOffset(geometry)
-        
-        // Image was pulled down
-        if offset > 0 {
-            return -offset
-        }
-        
-        return 0
-    }
-    func getHeightForHeaderImage(_ geometry: GeometryProxy) -> CGFloat {
-        let offset = getScrollOffset(geometry)
-        let imageHeight = geometry.size.height
-        
-        if offset > 0 {
-            return imageHeight + offset
-        }
-        
-        return imageHeight
-    }
-    var body : some View{
-        
-        
-        VStack(alignment:.center){
-            ZStack{
-                GeometryReader { geometry in
-                    
-                    
-                    Image("waffels")
-                        .resizable()
-                        .background(Color("grouped"))
-                        .scaledToFill()
-                        .overlay(TintOverlay().opacity(0.7))
-                        .frame(width: geometry.size.width, height: self.getHeightForHeaderImage(geometry))
-                        .cornerRadius(20, corners: [.bottomLeft,.bottomRight])
-                        .clipped()
-                        .offset(x: 0, y: self.getOffsetForHeaderImage(geometry))
-                    
-                    
-                    
-                }
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                .frame(height:screen.height/4 , alignment: .topLeading)
-                .shadow(color: Color.primary.opacity(0.2), radius: 20, x: 0, y: 10)
-                
-            }
-            
-            
-        }
-        
-        .edgesIgnoringSafeArea(.top)
-        
-    }
-    
-}
-
-
 
 
 struct menuItemSummaryForCustomOrStandard: View {

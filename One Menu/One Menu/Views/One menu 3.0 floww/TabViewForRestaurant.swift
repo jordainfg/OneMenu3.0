@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
+
 struct TabViewForRestaurant: View {
     
     @State var selectedRestaurant : Restaurant?
@@ -22,8 +22,6 @@ struct TabViewForRestaurant: View {
     @State var  viewState : viewState = .isLoading
     
     let screen = UIScreen.main.bounds
-    
-    @State var imagess : [String : WebImage] = [String: WebImage]()
     
     @State  var didTryAgain = false // used to retry fetching data
     
@@ -47,45 +45,14 @@ struct TabViewForRestaurant: View {
                 
                 viewState = .dataAvailableButStillLoadingImages
                 
-               
-                let myDispatchGroup = DispatchGroup()
-                
-                
-                for consumable in store.consumables {
-                    myDispatchGroup.enter()
-                    var url = consumable.image
-                    if !url.hasPrefix("gs://") {
-                        url = "gs://one-menu-40f52.appspot.com/Assets/placeHolderForOneMenuDark@3x.png"
-                    }
-                    let storageRef = store.storage.reference(forURL: url)
-                    storageRef.downloadURL { url, error in
-                        if let error = error {
-                            print(error.localizedDescription)
-                            self.imagess[consumable.consumableID] = WebImage(url: URL(string:""))
-                            myDispatchGroup.leave()
-                        } else {
-                            if let url = url {
-                                self.imagess[consumable.consumableID] = WebImage(url: url)
-                                print("Got image for consumable : \(consumable.consumableID)")
-                                myDispatchGroup.leave()
-                                
-                            }
-                        }
-                        
-                    }
-                    
-                    
-                }
-                
-                myDispatchGroup.notify(queue: .main) {
-                    print("FINISHED fetching all images")
-                   
+                store.getImages{ result in
+                    switch result {
+                    case .success:
                         viewState = .dataAvailable
-                        store.needsToLoadConsumables = false
-                    HapticService.shared.complexSuccess()
+                    case .failure:
+                        viewState = .noDataAvailable
+                    }
                 }
-                
-                print("FETCHING IMAGES FOR MEALS")
             case .failure:
                 viewState = .tryagain
                 print("Fail")
@@ -160,6 +127,27 @@ struct TabViewForRestaurant: View {
                 Text("failedTitle").font(.headline).fontWeight(.semibold).multilineTextAlignment(.center).lineLimit(10)
                 Text("failedsubTitle").font(.subheadline).fontWeight(.regular).lineLimit(10).multilineTextAlignment(.center)
             }
+            
+            Button(action: {
+               getData()
+            }) {
+                VStack(spacing:10){
+                    Image(systemName: "arrow.counterclockwise.circle.fill")
+                        .renderingMode(.template)
+                        .font(.largeTitle)
+                        .foregroundColor(Color(#colorLiteral(red: 0.9867780805, green: 0.4486843348, blue: 0.385889709, alpha: 1)))
+                    
+                    Text(LocalizedStringKey("tryagain"))
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding(.horizontal)
+                        .foregroundColor(.secondary)
+                }
+            }
+            .smoothTransition()
+            .padding(.top)
+            .buttonStyle(SquishableButtonStyle(fadeOnPress: true))
         }
         .padding(.horizontal,20)
     }
@@ -174,12 +162,12 @@ struct TabViewForRestaurant: View {
                     Label("Home", systemImage: "house.fill")
                 }.navigationBarTitleDisplayMode(.inline)
             
-            BrowseMenuView(imagess: imagess, store: store)
+            BrowseMenuView(store: store)
                 .tabItem {
                     Label("Browse", systemImage: "magnifyingglass")
                 }.navigationBarTitleDisplayMode(.inline)
             
-            FavoritesView(store: store,imagess: imagess)
+            FavoritesView(store: store)
                 .tabItem {
                     Label("Favorites", systemImage: "heart.fill")
                 }.navigationBarTitleDisplayMode(.inline)
@@ -189,7 +177,7 @@ struct TabViewForRestaurant: View {
                     Label("Bookings", systemImage: "calendar")
                 }.navigationBarTitleDisplayMode(.inline)
             
-            BasketView(imagess: imagess,store: store)
+            BasketView(store: store)
                 .tabItem {
                     Label("Basket", systemImage: "bag")
                 }.navigationBarTitleDisplayMode(.inline)

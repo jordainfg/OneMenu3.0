@@ -39,6 +39,7 @@ import Combine
 import Firebase
 import FirebaseStorage
 import FirebaseFirestore
+import SDWebImageSwiftUI
 
 class DataStore: ObservableObject, Identifiable{
     
@@ -65,13 +66,55 @@ class DataStore: ObservableObject, Identifiable{
     @Published var consumableCategories : [ConsumableCategorie] = []
 
     @Published var collectionName : collectionName = .Meals
+    
     @Published var languageType : languageType = .Dutch
+    
+    @Published var imagess : [String : WebImage] = [String: WebImage]()
     init() { // When Datastore is initialized the following functions will be run
         getRestaurants { result in
             print("Got restaurants from Data Store init")
         }
     }
     
+    func getImages(completionHandler: @escaping (Result<[String : WebImage], CoreError>) -> Void){
+         let myDispatchGroup = DispatchGroup()
+         
+         for consumable in consumables {
+             myDispatchGroup.enter()
+             var url = consumable.image
+             if !url.hasPrefix("gs://") {
+                 url = "gs://one-menu-40f52.appspot.com/Assets/placeHolderForOneMenuDark@3x.png"
+             }
+             let storageRef = storage.reference(forURL: url)
+             storageRef.downloadURL { url, error in
+                 if let error = error {
+                     print(error.localizedDescription)
+                     //self.imagess[consumable.consumableID] = WebImage(url: URL(string:""))
+                     myDispatchGroup.leave()
+                 } else {
+                     if let url = url {
+                         self.imagess[consumable.consumableID] = WebImage(url: url)
+                         print("Got image for consumable : \(consumable.consumableID)")
+                         myDispatchGroup.leave()
+                     }
+                 }
+             }
+         }
+         
+        myDispatchGroup.notify(queue: .main) {
+            if self.imagess.count > 1 {
+                completionHandler(.success(self.imagess))
+                self.needsToLoadConsumables = false
+                HapticService.shared.complexSuccess()
+            } else {
+                completionHandler(.failure(CoreError.errorDescription(error: "Failed to load images")))
+                HapticService.shared.standard(type: .error)
+            }
+             
+         }
+         
+         print("FETCHING IMAGES FOR MEALS")
+    }
     
     func createRestaurant(restaurant : Restaurant,completionHandler: @escaping (Result<Restaurant, CoreError>) -> Void){
         let refRestaurant = db.collection("Restaurants").document()
@@ -124,11 +167,8 @@ class DataStore: ObservableObject, Identifiable{
             }
         }
     }
-
  
     func getRestaurants(completionHandler: @escaping (Result<Response, CoreError>) -> Void){
-        
-        
             
             db.collection("Restaurants").whereField("isEditing", isEqualTo: false).getDocuments() { (querySnapshot, err) in
                 
@@ -193,7 +233,6 @@ class DataStore: ObservableObject, Identifiable{
         
     }
     
-   
 
     func getConsumableCategories(collectionName: collectionName,languageType: languageType, completionHandler: @escaping (Result<Response, CoreError>) -> Void){
     
@@ -227,8 +266,6 @@ class DataStore: ObservableObject, Identifiable{
             }
     
     }
-    
-
     
     // MARK: - Request
     func createPartnerRequest(request : PartnerRequest,completionHandler: @escaping (Result<Response, CoreError>) -> Void){

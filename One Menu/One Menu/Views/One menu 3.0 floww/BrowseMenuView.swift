@@ -7,13 +7,14 @@
 
 import SwiftUI
 import CoreData
-import SDWebImage
-import SDWebImageSwiftUI
+
 struct BrowseMenuView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
-    @State var imagess : [String : WebImage] = [String: WebImage]()
+   
     @ObservedObject var store : DataStore
+    
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationView {
@@ -51,8 +52,8 @@ struct BrowseMenuView: View {
     //
     //            })
     //
-                NavigationLink(destination: SelectedMenuItemView(menuItem: menuItem(consumable: consumable), consumable: consumable, store: store, image: imagess[consumable.consumableID]), label: {
-                    ConsumableRow(item: consumable, image : imagess[consumable.consumableID])
+                NavigationLink(destination: SelectedMenuItemView(menuItem: menuItem(consumable: consumable), consumable: consumable, store: store, image: store.imagess[consumable.consumableID]), label: {
+                    ConsumableRow(item: consumable, image : store.imagess[consumable.consumableID])
                 })
                 
             },
@@ -67,7 +68,10 @@ struct BrowseMenuView: View {
             }
             )
                 
-                .navigationBarHidden(true)
+                .navigationBarTitle("Browse", displayMode: .inline)
+                .navigationBarItems(leading: BarItemButton(systemName: "arrow.triangle.2.circlepath"){
+                    presentationMode.wrappedValue.dismiss()
+                })
                 .toolbar {
                             ToolbarItem(placement: .principal) {
                                 HStack {

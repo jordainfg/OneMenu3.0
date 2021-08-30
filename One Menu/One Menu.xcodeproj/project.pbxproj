@@ -15,6 +15,10 @@
 		5E01CD6126DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */; };
 		5E01CD6226DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */; };
 		5E01CD6326DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */; };
+		5E01CD6526DD085D002EFA84 /* Optional+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD6426DD085D002EFA84 /* Optional+extension.swift */; };
+		5E01CD6626DD085D002EFA84 /* Optional+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD6426DD085D002EFA84 /* Optional+extension.swift */; };
+		5E01CD6726DD085D002EFA84 /* Optional+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD6426DD085D002EFA84 /* Optional+extension.swift */; };
+		5E01CD6826DD085D002EFA84 /* Optional+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E01CD6426DD085D002EFA84 /* Optional+extension.swift */; };
 		5E10B73026DBB5DC00C6F93E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B72F26DBB5DC00C6F93E /* Buttons.swift */; };
 		5E10B73226DBB86F00C6F93E /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73126DBB86F00C6F93E /* RingView.swift */; };
 		5E10B73426DBB8B500C6F93E /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10B73326DBB8B500C6F93E /* Text.swift */; };
@@ -396,6 +400,7 @@
 /* Begin PBXFileReference section */
 		5E01CD5A26DCF5BA002EFA84 /* Binding+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+extension.swift"; sourceTree = "<group>"; };
 		5E01CD5F26DCF6A6002EFA84 /* StrechySDWebImageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechySDWebImageHeader.swift; sourceTree = "<group>"; };
+		5E01CD6426DD085D002EFA84 /* Optional+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+extension.swift"; sourceTree = "<group>"; };
 		5E10B72F26DBB5DC00C6F93E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		5E10B73126DBB86F00C6F93E /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		5E10B73326DBB8B500C6F93E /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
@@ -904,6 +909,7 @@
 				5E12407026C14429008D42BB /* View+ext.swift */,
 				5E12406A26C14429008D42BB /* CGRect+extension.swift */,
 				5E01CD5A26DCF5BA002EFA84 /* Binding+extension.swift */,
+				5E01CD6426DD085D002EFA84 /* Optional+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1533,6 +1539,7 @@
 				5E1240AD26C14429008D42BB /* UIDevice+extension.swift in Sources */,
 				5EE7DBCD26D92185005FE862 /* TabViewForRestaurant.swift in Sources */,
 				5E10B74926DBC33000C6F93E /* TextFields.swift in Sources */,
+				5E01CD6526DD085D002EFA84 /* Optional+extension.swift in Sources */,
 				5E1240D726C14429008D42BB /* DataStore.swift in Sources */,
 				5E4E3FF726C14DF100175B57 /* ChooseLanguageView.swift in Sources */,
 				5E12409526C14429008D42BB /* ConsumableCategorieIcon.swift in Sources */,
@@ -1629,6 +1636,7 @@
 				5E10B74C26DBC39700C6F93E /* BlurView.swift in Sources */,
 				5EB11C8926C2967000F85734 /* EditConsumableView.swift in Sources */,
 				5EB11C7526C2967000F85734 /* CreateRestaurantView.swift in Sources */,
+				5E01CD6626DD085D002EFA84 /* Optional+extension.swift in Sources */,
 				5EB11C6126C2967000F85734 /* ProfileView.swift in Sources */,
 				5EB11CD526C29F3100F85734 /* String+extension.swift in Sources */,
 				5EB11CDF26C2A0A100F85734 /* UIApplication+extension.swift in Sources */,
@@ -1685,6 +1693,7 @@
 				5EB11CB426C2967000F85734 /* LocalNotificationService.swift in Sources */,
 				5EB11CC626C2967000F85734 /* Restaurant.swift in Sources */,
 				5E123FA226C12DBE008D42BB /* One_Menu_BusinessApp.swift in Sources */,
+				5E01CD6726DD085D002EFA84 /* Optional+extension.swift in Sources */,
 				5EB11C8226C2967000F85734 /* CreateConsumableCategorieView.swift in Sources */,
 				5EB11C7C26C2967000F85734 /* ChooseLanguageView.swift in Sources */,
 				5EB11CDA26C29F6500F85734 /* VisualEffectBlur.swift in Sources */,
@@ -1787,6 +1796,7 @@
 				5E4E3FF826C14DF100175B57 /* ChooseLanguageView.swift in Sources */,
 				5E01CD6326DCF6A6002EFA84 /* StrechySDWebImageHeader.swift in Sources */,
 				5E4E3FFE26C14EC500175B57 /* ConsumablesForSelectedCategorie.swift in Sources */,
+				5E01CD6826DD085D002EFA84 /* Optional+extension.swift in Sources */,
 				5E1240C226C14429008D42BB /* LibraryContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

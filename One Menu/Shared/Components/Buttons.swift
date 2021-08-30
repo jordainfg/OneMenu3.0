@@ -243,6 +243,23 @@ struct CircularButton: View {
     }
 }
 
+struct BarItemButton: View {
+    
+    var systemName: String
+    var color : Color = Color.primary
+    var customAction: () -> ()
+    
+    var body: some View {
+        Button(action: {
+            customAction()
+        }, label: {
+        Image(systemName: systemName)
+            .font(.headline)
+            .foregroundColor(color)
+        })
+    }
+}
+
 
 
 struct NavigationDrawerButton: View {

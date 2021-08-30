@@ -7,14 +7,15 @@
 
 import SwiftUI
 import CoreData
-import SDWebImageSwiftUI
+
 struct FavoritesView: View {
     
     @ObservedObject var store : DataStore
 
     @Environment(\.managedObjectContext) private var viewContext
     
-    @State var imagess : [String : WebImage] = [String: WebImage]()
+    @Environment(\.presentationMode) var presentationMode
+    
     @FetchRequest(
         entity: FavoritedConsumable.entity(),
         sortDescriptors: []
@@ -27,47 +28,53 @@ struct FavoritesView: View {
     
     var body: some View {
        
-        VStack{
-                Picker(selection: $selectedSegment.animation(), label: Text("")) {
-                    ForEach(segements, id: \.self) { segment in
-                        Text(segment.rawValue)
+        NavigationView {
+            VStack{
+                    Picker(selection: $selectedSegment.animation(), label: Text("")) {
+                        ForEach(segements, id: \.self) { segment in
+                            Text(segment.rawValue)
+                        }
                     }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding(.horizontal)
-                
-                List {
-                    ForEach(store.consumables.filter { consumable in
-                        
-                        favoritedConsumables.contains(where: {
-                            $0.consumableID == consumable.consumableID &&
-                            $0.restaurantID == store.selectedRestaurant!.restaurantID &&
-                            $0.isMeal == (selectedSegment == .meals)
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal)
+                    
+                    List {
+                        ForEach(store.consumables.filter { consumable in
+                            
+                            favoritedConsumables.contains(where: {
+                                $0.consumableID == consumable.consumableID &&
+                                $0.restaurantID == store.selectedRestaurant!.restaurantID &&
+                                $0.isMeal == (selectedSegment == .meals)
+                            })
+                            
                         })
-                        
-                    })
-                    { consumable in
-                            ConsumableRow(item: consumable, image : imagess[consumable.consumableID])
+                        { consumable in
+                            NavigationLink(destination: SelectedMenuItemView(menuItem: menuItem(consumable: consumable), consumable: consumable, store: store, image: store.imagess[consumable.consumableID]), label: {
+                                ConsumableRow(item: consumable, image : store.imagess[consumable.consumableID])
+                            })
+                        }
+                        .onDelete(perform: delete)
                     }
-                    .onDelete(perform: delete)
-                }
-                .listStyle(PlainListStyle())
-                .toolbar {
-                    EditButton()
-                }
-                .overlay(Group {
-                                if !favoritedConsumables.contains(where: {
-                                   
-                                    $0.restaurantID == store.selectedRestaurant!.restaurantID
-                                }
-                                ) {
-                                    VStack {
-                                        Text("Looks like you don't have any favorites yet. You can favorite meals and beverages by tapping the hart when browsing meals.")
-                                            .multilineTextAlignment(.center)
-                                    }.padding()
-                                }
-                })
-            
+                    .navigationBarTitle("Favorites", displayMode: .inline)
+                    .navigationBarItems(leading: BarItemButton(systemName: "arrow.triangle.2.circlepath"){
+                        presentationMode.wrappedValue.dismiss()
+                    })
+                    .listStyle(PlainListStyle())
+                    .toolbar {EditButton()}
+                    .overlay(Group {
+                                    if !favoritedConsumables.contains(where: {
+                                       
+                                        $0.restaurantID == store.selectedRestaurant!.restaurantID
+                                    }
+                                    ) {
+                                        VStack {
+                                            Text("Looks like you don't have any favorites yet. You can favorite meals and beverages by tapping the hart when browsing meals.")
+                                                .multilineTextAlignment(.center)
+                                        }.padding()
+                                    }
+                    })
+                
+            }
         }
         
     }
