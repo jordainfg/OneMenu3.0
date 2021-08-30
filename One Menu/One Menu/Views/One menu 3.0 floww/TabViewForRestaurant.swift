@@ -139,7 +139,6 @@ struct TabViewForRestaurant: View {
         }
     }
     
-    
     var loading : some View{
         VStack{
             if #available(iOS 14, *) {
