@@ -73,6 +73,6 @@ struct Restaurant: Identifiable, Hashable,Codable {
         self.isEditing = dictionary["isEditing"] as! Bool
     }
   
-    static let `default` = Restaurant(id: "test", restaurantID: "restaurant1", name: "Number 10", description: "Curaçaos finest hotspot for coffee, breakfast and lunch.", image: "gs://one-menu-40f52.appspot.com/Carpe Diem/image-asset.jpeg", address: "SANTA ROSAWEG 10 - WILLEMSTAD, CURAÇAO", emailAddress: "number10@gmail.com", hours: ["Monday-Thu 12:00am to 6:00pm", "Friday-Sunday 12:00am to 6:00pm"], phone: "0638482214", color: "", imageReference: "gs://one-menu-40f52.appspot.com/Carpe Diem/image-asset.jpeg", facebookURL: "", instagramURL: "", logoURL: "", websiteURL: "", subscriptionPlan: 0, messagingTopic: "test", hasMultiLanguageSupport: false, isEditing: true)
+    static let `default` = Restaurant(id: "w7dbr9Q7XyAL1IUJskJs", restaurantID: "w7dbr9Q7XyAL1IUJskJs", name: "Number 10", description: "Curaçaos finest hotspot for coffee, breakfast and lunch.", image: "gs://one-menu-40f52.appspot.com/Carpe Diem/image-asset.jpeg", address: "SANTA ROSAWEG 10 - WILLEMSTAD, CURAÇAO", emailAddress: "number10@gmail.com", hours: ["Monday-Thu 12:00am to 6:00pm", "Friday-Sunday 12:00am to 6:00pm"], phone: "0638482214", color: "", imageReference: "gs://one-menu-40f52.appspot.com/Carpe Diem/image-asset.jpeg", facebookURL: "", instagramURL: "", logoURL: "", websiteURL: "", subscriptionPlan: 0, messagingTopic: "test", hasMultiLanguageSupport: false, isEditing: true)
 }
 

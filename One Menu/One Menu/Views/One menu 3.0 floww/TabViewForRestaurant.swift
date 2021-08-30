@@ -8,24 +8,24 @@
 import SwiftUI
 import SDWebImageSwiftUI
 struct TabViewForRestaurant: View {
+    
     @State var selectedRestaurant : Restaurant?
 
-    
     //Init firebase integration
     // MARK: - Variable's
     @State var collectionName : collectionName = .Meals
+    
     @State var languageType : languageType = .Dutch
     
     @ObservedObject var store : DataStore
     
     @State var  viewState : viewState = .isLoading
+    
     let screen = UIScreen.main.bounds
-    @State var image :WebImage?
     
     @State var imagess : [String : WebImage] = [String: WebImage]()
     
-    
-    @State  var didTryAgain = false
+    @State  var didTryAgain = false // used to retry fetching data 
     
     // MARK: - Functions
     func getConsumableCategories(completionHandler: @escaping (Result<Response, CoreError>) -> Void){
@@ -139,7 +139,7 @@ struct TabViewForRestaurant: View {
         }
     }
     
-    var loading : some View{
+    var loading : some View {
         VStack{
             if #available(iOS 14, *) {
                 ProgressView()
@@ -199,8 +199,8 @@ struct TabViewForRestaurant: View {
     }
 }
 
-//struct HomeForSelectedRestaurant_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TabViewForRestaurant()
-//    }
-//}
+struct HomeForSelectedRestaurant_Previews: PreviewProvider {
+    static var previews: some View {
+        TabViewForRestaurant(selectedRestaurant: Restaurant.default,store: DataStore())
+    }
+}
