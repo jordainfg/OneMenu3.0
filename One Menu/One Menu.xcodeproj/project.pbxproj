@@ -232,6 +232,9 @@
 		5E4E406126C169C400175B57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E406426C169C400175B57 /* Localizable.strings */; };
 		5E4E406226C169C400175B57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E406426C169C400175B57 /* Localizable.strings */; };
 		5E4E406A26C1746100175B57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E400C26C166E100175B57 /* GoogleService-Info.plist */; };
+		5E63C1B226DFA8F300B3E8E0 /* Conent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E63C1B126DFA8F300B3E8E0 /* Conent.swift */; };
+		5E68176026FCA60600AB3AEA /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68175F26FCA60600AB3AEA /* UnlockManager.swift */; };
+		5E68176126FCA60600AB3AEA /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68175F26FCA60600AB3AEA /* UnlockManager.swift */; };
 		5EA1EAF526C2A3EE000C7C2E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1EAF426C2A3EE000C7C2E /* StoreKit.framework */; };
 		5EA1EAF726C2AE76000C7C2E /* ChangeColorThemeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */; };
 		5EA1EAF826C2AE76000C7C2E /* ChangeColorThemeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */; };
@@ -509,6 +512,8 @@
 		5E4E406326C169C400175B57 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5E4E406526C169C600175B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5E4E406B26C1751100175B57 /* One-Menu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "One-Menu-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5E63C1B126DFA8F300B3E8E0 /* Conent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conent.swift; sourceTree = "<group>"; };
+		5E68175F26FCA60600AB3AEA /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
 		5EA1EAF426C2A3EE000C7C2E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5EA1EAF626C2AE76000C7C2E /* ChangeColorThemeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorThemeSegment.swift; sourceTree = "<group>"; };
 		5EB11C0A26C295C300F85734 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -810,6 +815,7 @@
 				5EB11CC926C2968A00F85734 /* LaunchScreen.storyboard */,
 				5EB11CD226C2969600F85734 /* Localizable.strings */,
 				5EB11C0A26C295C300F85734 /* Media.xcassets */,
+				5E68175F26FCA60600AB3AEA /* UnlockManager.swift */,
 			);
 			path = "One Menu Business";
 			sourceTree = "<group>";
@@ -1215,6 +1221,7 @@
 				5EE7DBC526D92184005FE862 /* BookingsView.swift */,
 				5EE7DBCE26D9218E005FE862 /* OrderView */,
 				5EE7DBD626D9219E005FE862 /* CoreData */,
+				5E63C1B126DFA8F300B3E8E0 /* Conent.swift */,
 			);
 			path = "One menu 3.0 floww";
 			sourceTree = "<group>";
@@ -1537,6 +1544,7 @@
 				5E1240D526C14429008D42BB /* CoreError.swift in Sources */,
 				5E1240B326C14429008D42BB /* View+ext.swift in Sources */,
 				5E4E403F26C1675100175B57 /* LanguageView.swift in Sources */,
+				5E63C1B226DFA8F300B3E8E0 /* Conent.swift in Sources */,
 				5E4E3FFA26C14E8B00175B57 /* MainViewForConsumables.swift in Sources */,
 				5E1240AF26C14429008D42BB /* UIApplication+extension.swift in Sources */,
 				5E1240AD26C14429008D42BB /* UIDevice+extension.swift in Sources */,
@@ -1615,6 +1623,7 @@
 				5E10B75626DBC3F600C6F93E /* TextFields.swift in Sources */,
 				5E01CD5C26DCF5BA002EFA84 /* Binding+extension.swift in Sources */,
 				5EB11CD926C29F6400F85734 /* VisualEffectBlur.swift in Sources */,
+				5E68176026FCA60600AB3AEA /* UnlockManager.swift in Sources */,
 				5EB11C6B26C2967000F85734 /* autoAppearanceSwitch.swift in Sources */,
 				5E1240ED26C145BB008D42BB /* RestaurantRow.swift in Sources */,
 				5E1240E526C144FC008D42BB /* Consumable.swift in Sources */,
@@ -1705,6 +1714,7 @@
 				5E1240EE26C145BC008D42BB /* RestaurantRow.swift in Sources */,
 				5E1240E626C144FD008D42BB /* Consumable.swift in Sources */,
 				5EB11C8826C2967000F85734 /* ManageConsumablesForCategorieView.swift in Sources */,
+				5E68176126FCA60600AB3AEA /* UnlockManager.swift in Sources */,
 				5EB11CA226C2967000F85734 /* ResetPasswordView.swift in Sources */,
 				5EB11C9226C2967000F85734 /* NotificationsView.swift in Sources */,
 				5EB11CB226C2967000F85734 /* SubscriptionManager.swift in Sources */,

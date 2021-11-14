@@ -17,7 +17,7 @@ struct RestaurantHomeView: View {
     var body: some View {
         
         ScrollView(.vertical, showsIndicators: false, content: {
-            StrechyFirebaseStorageImageHeader(firestoreLocationUrlString: restaurant.imageReference, store: store)
+     //       StrechyFirebaseStorageImageHeader(firestoreLocationUrlString: restaurant.imageReference, store: store)
             VStack {
                 HStack {
                     VStack(alignment:.leading,spacing: 5) {

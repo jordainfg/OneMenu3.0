@@ -84,9 +84,9 @@ struct RestaurantView: View {
                         ForEach(store.Restaurants, id: \.self ) { item in
                             NavigationLink(destination: selectedRestaurant(selectedRestaurant: item, store: store)) {
                                 if store.Restaurants.count==1{
-                                    RestaurantRow(item: item)
+                                    RestaurantRow(restaurant: item)
                                 } else{
-                                    RestaurantRow(item: item)
+                                    RestaurantRow(restaurant: item)
                                 }
                             }
                             

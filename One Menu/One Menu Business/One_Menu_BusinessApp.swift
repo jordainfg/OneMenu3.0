@@ -18,7 +18,8 @@ struct One_Menu_BusinessApp: App {
     @Environment(\.scenePhase) var scenePhase
     
     @AppStorage("selectedColorScheme") private var selectedColorScheme : colorScheme = .system
-    
+
+    let unLockManger = UnlockManager(somestring: "")
     var body: some Scene {
         WindowGroup {
             

@@ -19,13 +19,13 @@ struct StrechySDWebImageHeader : View{
                     if let image = image{
                         
                         image
-                            .placeholder {PlaceholderImage() }
+                           // .placeholder {PlaceholderImage() }
                             .resizable()
                             .background(Color("grouped"))
                             .scaledToFill()
-                            .overlay(TintOverlay().opacity(0.4))
+                            //.overlay(TintOverlay().opacity(0.4))
                             .frame(width: geometry.size.width, height: self.getHeightForHeaderImage(geometry))
-                            .cornerRadius(20, corners: [.bottomLeft,.bottomRight])
+                            //.cornerRadius(20, corners: [.bottomLeft,.bottomRight])
                             .clipped()
                             .offset(x: 0, y: self.getOffsetForHeaderImage(geometry))
                     }
